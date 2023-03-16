@@ -1,0 +1,27 @@
+.bannerImg {
+  /* justify-content: center;
+  align-content: center; */
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.banner {
+  vertical-align: bottom;
+  display: flex;
+  /* justify-content: flex-end; */
+  float: right;
+}
+
+.bannerBtn {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  padding: 7px;
+  margin: 3px;
+  font-weight: bold;
+}
+
+/* :nth-child(even) {
+  color: red;
+} */
