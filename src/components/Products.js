@@ -34,8 +34,9 @@ import {Link} from 'react-router-dom';
           </div>  
           <div className="s_login">  
           <FontAwesomeIcon icon={faBasketShopping} size="2x"/>
-          <div>로그인</div>
-          <div>회원가입</div>
+          <Link to="/Login"><div>로그인</div></Link>
+          <Link to="/Signup"><div>회원가입</div></Link>
+          
           </div>
           </div>
           <div className="mainpage">

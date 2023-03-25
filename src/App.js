@@ -1,16 +1,17 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Login from "./components/Login";
 import Products from "./components/Products";
 import Community from "./components/Community";
 import Main from "./components/Main";
+import MyPage from "./components/MyPage";
 import Signup from "./components/Signup";
 
 export default function App() {
   return (
     <Router>
-      <div>
+     
         {/* <Link to="/">
           <div className="banner">
             <img
@@ -21,16 +22,17 @@ export default function App() {
               alt="logo"
             />
           </div>
-        </Link> */}
+        </Link>  */}
         <Routes>
           <Route exact path="/" element={<Header />} />
           <Route exact path="/" element={<Main />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Community" element={<Community />} />
+          <Route path="/MyPage" element={<MyPage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
         </Routes>
-      </div>
+     
     </Router>
   );
 }
