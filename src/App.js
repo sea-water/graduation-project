@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <Link to="/">
+        {/* <Link to="/">
           <div className="banner">
             <img
               className="bannerLogo"
@@ -21,7 +21,7 @@ export default function App() {
               alt="logo"
             />
           </div>
-        </Link>
+        </Link> */}
         <Routes>
           <Route exact path="/" element={<Header />} />
           <Route exact path="/" element={<Main />} />

@@ -7,6 +7,7 @@ import { BsFillPersonPlusFill, BsFillPersonFill } from "react-icons/bs";
 import { RiCommunityLine } from "react-icons/ri";
 import { IoIosFitness } from "react-icons/io";
 import { Slide } from "react-slideshow-image";
+import {Link} from 'react-router-dom';
 import "react-slideshow-image/dist/styles.css";
 
 export default function Header() {
@@ -17,7 +18,19 @@ export default function Header() {
   ];
   return (
     <div>
+ 
       <span className="banner">
+      <Link to="/">
+          <div className="banner">
+            <img
+              className="bannerLogo"
+              src="https://cdn-icons-png.flaticon.com/512/4729/4729230.png"
+              width="50px"
+              height="50px"
+              alt="logo"
+            />
+          </div>
+        </Link>
         <a className="bannerBtn" href="/Products">
           <IoIosFitness color="gray" />
           <span> PRODUCTS</span>
