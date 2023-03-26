@@ -3,9 +3,85 @@
     padding-left: 15%;
     padding-top:100px;
     background-color: #FFFBD4;
-    width:100%;
+    width:110%;
     height:2500px;
   display:flex;
   flex-direction: column;
   
   }
+ .advertisement>h1{
+  margin:20px;
+  
+ }
+  .advertisement>img{
+    width:115%;
+    height:550px;
+    background-size: cover;
+  }
+.main_best{
+  border-bottom:2px solid black;
+  border-top:2px solid black;
+  overflow: auto;
+  overflow-x: scroll;
+  width:3000px;
+  display:flex;
+  height:450px;
+  
+}
+.main_best::-webkit-scrollbar{
+  width: 10px;
+ 
+  color:aqua;
+}
+.main_best::-webkit-scrollbar-thumb{
+  background-color: #cfd3da;
+  background-clip: padding-box;
+    border: 5px solid transparent;
+    width:500px;
+  border-radius: 30px;
+
+}
+.main_best::-webkit-scrollbar-track{
+  background-color:rgb(232, 232, 34);
+}
+
+.main_best1{
+  width:282px;
+  margin:20px;
+}
+.main_img1{
+  height:330px;
+  background-color: gray;
+}
+.main_best2{
+  width:282px;
+  margin:20px;
+}
+.main_img2{
+  height:330px;
+  background-color: gray;
+}
+.main_best3{
+  width:282px;
+  margin:20px;
+}
+.main_img3{
+  height:330px;
+  background-color: gray;
+}
+.main_best4{
+  width:282px;
+  margin:20px;
+}
+.main_img4{
+  height:330px;
+  background-color: gray;
+}
+.main_best5{
+  width:282px;
+  margin:20px;
+}
+.main_img5{
+  height:330px;
+  background-color: gray;
+}
