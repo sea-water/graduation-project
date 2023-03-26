@@ -1,0 +1,130 @@
+.shopping_top1{
+   
+  padding-left: 15%;
+  padding-top:100px;
+  background-color: #FFFBD4;
+  width:100%;
+  height:2500px;
+display:flex;
+flex-direction: column;
+
+}
+
+.mantop_1{
+  width:100%;
+  display:flex;
+  height:500px;
+}
+
+.top_1{
+  margin:20px;
+  width: 25%;
+  height: 400px;
+ 
+}
+.top1_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg");
+}
+
+
+.top_2{
+   
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top2_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/medium/202303/c9244b8bde16f8a1c69a76c2a6e369b7.jpg");
+}
+
+
+.top_3{
+ 
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top3_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/small/202303/b29a922033c76acf987dc00affb15314.jpg");
+}
+.top_4{
+  
+  margin:20px;
+  width: 25%;
+  height: 400px;
+ 
+}
+.top4_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/medium/202303/967ca25b8acab37801febdb4a2896e4a.jpg");
+}
+
+
+.mantop_2{
+  width:100%;
+  display:flex;
+  height:500px;
+}
+
+.top_5{
+
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top5_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/small/202303/de6b9f3a679debcfd7f3ac7612a67605.jpg");
+}
+
+.top_6{
+  
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top6_img{
+  height:330px;
+  background-size:cover; 
+background-image: url("https://andar.co.kr/web/product/small/202302/10679728c6b46bb0e45f57f2f64d8aef.jpg");
+}
+
+.top_7{
+  
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top7_img{
+  height:330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/medium/202211/099c99e2acc757d33389706184f377ec.jpg");
+}
+
+.top_8{
+  
+  margin:20px;
+  width: 25%;
+  height: 400px;
+  
+}
+.top8_img{
+  height: 330px;
+  background-size:cover; 
+  background-image: url("https://andar.co.kr/web/product/small/202211/675e5162cbda20e958565aae4f390e21.jpg");
+}
+
+

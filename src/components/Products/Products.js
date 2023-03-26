@@ -1,28 +1,36 @@
 import './Products.css';
+ import React from "react";
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  import { faBars } from "@fortawesome/free-solid-svg-icons";
  import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
  import {faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
- import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
- import logo from '../images/logo.png';
- import React,{useState} from "react";
+ import logo from '../img/logo.png';
+import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import {useState} from "react";
 import {Link} from 'react-router-dom';
+import Productsmanentire from './Productsmanentire';
+import Productsmantop from './Productsmantop';
+import Productsmanpants from './Productsmanpants';
+import Productsmanouter from './Productsmanouter';
+import Productsmanset from './Productsmanset';
+ import {Routes,Route} from 'react-router-dom';
+import Productsmain from './Productsmain';
  function Products(){
-    const [isOpen,setMenu]=useState(false);
-    const[isOpe,setMen]=useState(false);
-    const[isOp,setMe]=useState(false);
-  const toggleMenu =()=>{
-    setMenu(isOpen=>!isOpen);
-  };
-  const toggleMen =()=>{
-    setMen(isOpe=>!isOpe);
-  };
-  const toggleMe =()=>{
-    setMe(isOpe=>!isOpe);
-  };
+  const [isOpen,setMenu]=useState(false);
+  const[isOpe,setMen]=useState(false);
+  const[isOp,setMe]=useState(false);
+const toggleMenu =()=>{
+  setMenu(isOpen=>!isOpen);
+};
+const toggleMen =()=>{
+  setMen(isOpe=>!isOpe);
+};
+const toggleMe =()=>{
+  setMe(isOpe=>!isOpe);
+};
   return (
        <div className="Products">
-       <div className="s_header">
+    <div className="Sheader">
         <div className="s_logo">
         <FontAwesomeIcon icon={faBars} size="2x"/>
         <Link to="/">
@@ -39,17 +47,18 @@ import {Link} from 'react-router-dom';
           
           </div>
           </div>
-          <div className="mainpage">
-          <aside className="aside_menu">
+    <aside className="aside_menu">
             <div>
             <h2 className="main_man">남성 의류
             <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
             <ul className={isOpen ? "show-menu":"hide-menu"}>
-            <li>전체</li>
-            <li>상의</li>
-            <li>하의</li>
-            <li>아우터</li>
-            <li>세트</li>
+     
+         
+            <Link to ="manentire"><li>전체</li></Link>
+            <Link to ="mantop"><li>상의</li></Link>
+            <Link to ="manpants"><li>하의</li></Link>
+            <Link to ="manouter"><li>아우터</li></Link>
+            <Link to ="manset"><li>세트</li></Link>
             </ul>
             </div>
             <div><h2 className="main_woman">여성 의류
@@ -78,51 +87,21 @@ import {Link} from 'react-router-dom';
             </div>
             
           </aside>
-          <div className="shopping_main">
-            <div className="shopping_1">
-  <div className="main_1">
-    <div className="main1_img"></div>
-    <div className="main1_text"><h3>손목 보호대</h3>
-    가격:56632원
-    </div>
-    
-  </div>
-  <div className="main_2">
-  <div className="main2_img"></div>
-    <div className="main2_text"><h3>마사지 싱글 볼</h3>
-    가격:56632원</div>
-  </div>
-  <div className="main_3">
-  <div className="main3_img"></div>
-    <div className="main3_text"><h3>요가 매트</h3>
-    가격:56632원</div>
-  </div>
-  <div className="main_4">
-  <div className="main4_img"></div>
-    <div className="main4_text"><h3>요가 매트</h3>
-    가격:56632원</div>
-  </div>
-  </div>
-  
-  <div className="shopping_2">
-  <div className="main_5"></div>
-  <div className="main_6"></div>
-  <div className="main_7"></div>
-  <div className="main_8"></div>
-  </div>
-  
-  
-  <div className="shopping_3">
-  <div className="main_9"></div>
-  <div className="main_10"></div>
-  <div className="main_11"></div>
-  <div className="main_12"></div>
-  </div>
-          </div>
-          </div>
-         
+          <Routes>
+          <Route path="/" element={<Productsmain/>}></Route>    
+        <Route path="manentire" element={<Productsmanentire/>}></Route>
+        <Route path="mantop" element={<Productsmantop/>}></Route>
+        <Route path="manpants" element={<Productsmanpants/>}></Route>
+        <Route path="manouter" element={<Productsmanouter/>}></Route>
+        <Route path="manset" element={<Productsmanset/>}></Route>
+      </Routes>
+      <div className="back">
+       {/* 스크롤 예비 */}
       </div>
- 
+      </div>
+      
+      
+
     );
    }
 

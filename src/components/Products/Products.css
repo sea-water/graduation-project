@@ -1,0 +1,180 @@
+.Products{
+  overflow: auto;
+  overflow: scroll;
+  height:2500px;
+}
+.back{
+height:1000px;
+background-color: #FFFBD4;
+
+}
+.Sheader{
+    display:flex;
+    position:fixed;
+      background-color: white;
+      height:100px;
+      width:100%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .s_input>input{
+      background-color: white;
+      height:30px;
+      width:400px;
+    
+      border-right: 0px;
+      border-top: 0px;
+      border-left: 0px;
+    }
+    .s_input>button{
+      background-color: white;
+      height:30px;
+      border:0px;
+      
+    
+    }
+    .s_logo{
+      display:flex;
+      flex-direction: row;
+    width:150px;
+    height:50px;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .s_logo>a>img{
+      display:flex;
+      justify-content: space-between;
+      padding-left: 50px;
+    height:100px;
+    
+    }
+    .s_login{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      width:200px;
+      justify-content: space-around;
+    }
+    
+    .aside_menu{
+    width:15%;
+    height:1400px;
+    background-color: white;
+    margin:0px;
+    position:fixed;
+    margin-top:100px;
+    }
+    .main_man{
+      
+      margin-top: 0px;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
+     border-bottom: 1px solid black;
+    
+    }
+    .man_button{
+      background-color: #ffff;
+      border:0px;
+    }
+    li{
+      list-style: none;
+    }
+    .show-menu{
+      padding-left:20px;
+      margin:0;
+      width: 90%;
+      height: 120px;
+      position: relative;
+      left: 0px;
+      transition: 0.1s;
+      }
+      
+      .hide-menu{
+        padding:0;
+      margin:0;
+      width: 100%;
+      height: 0px;
+      position: relative;
+      left: -150px;
+      transition: 0.1s;
+      }
+    
+    
+    
+    .main_woman{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
+     border-bottom: 1px solid black;
+    
+    }
+    .woman_button{
+      background-color: #ffff;
+      border:0px;
+    }
+    .show{
+      padding-left:20px;
+      margin:0;
+      width: 90%;
+      height: 190px;
+      position: relative;
+      left: 0px;
+      transition: 0.1s;
+      }
+      
+      .hide{
+        opacity: 0;
+        padding:0;
+      margin:0;
+      width: 100%;
+      height: 0px;
+      position: relative;
+      left: -150px;
+      transition: 0.1s;
+      }
+    
+    
+    .main_gym{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
+     border-bottom: 1px solid black;
+    
+    }
+    .gym_button{
+      background-color: #ffff;
+      border:0px;
+    }
+    .show_3{
+      padding-left:20px;
+      margin:0;
+      width: 90%;
+      height: 170px;
+      position: relative;
+      left: 0px;
+      transition: 0.1s;
+      }
+      
+      .hide_3{
+        padding:0;
+      margin:0;
+      width: 100%;
+      height: 0px;
+      position: relative;
+      left: -150px;
+      transition: 0.1s;
+      }
+    
+    .aside_menu>div>div{
+      margin:5px;
+      padding-left: 10px;
+    }
+    
+    

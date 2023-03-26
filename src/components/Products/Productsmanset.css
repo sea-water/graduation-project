@@ -1,0 +1,11 @@
+.Productsmanset{
+   
+    padding-left: 16%;
+    padding-top:100px;
+    background-color: #FFFBD4;
+    width:100%;
+    height:2500px;
+  display:flex;
+  flex-direction: column;
+  
+  }
