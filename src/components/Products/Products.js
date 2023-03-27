@@ -49,6 +49,9 @@ const toggleMe =()=>{
           </div>
     <aside className="aside_menu">
             <div>
+            <h2 className="main_main">메인
+            <button className="man_button">
+            <Link to ="/Products"><FontAwesomeIcon icon={faChevronRight} /></Link></button></h2>
             <h2 className="main_man">남성 의류
             <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
             <ul className={isOpen ? "show-menu":"hide-menu"}>

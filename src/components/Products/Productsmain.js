@@ -50,6 +50,17 @@ function Productsmain() {
                 </div>
 
                 </div>
+                <h1>New</h1>
+                <div className="main_new">
+                    <div className="main_new1"></div>
+                    <div className="main_new2"></div>
+                    <div className="main_new3"></div>
+                    <div className="main_new4"></div>
+                    <div className="main_new5"></div>
+                    <div className="main_new5"></div>
+                    <div className="main_new5"></div>
+                    <div className="main_new5"></div>
+                </div>
             </div>
         </div>
     );

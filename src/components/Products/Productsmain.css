@@ -85,3 +85,39 @@
   height:330px;
   background-color: gray;
 }
+.main_new{
+  height:1350px;
+  width:100%;
+display:flex;
+flex-wrap: wrap;
+}
+.main_new1{
+  height:33%;
+  width:282px;
+  margin:20px;
+  background-color: #cfd3da;
+}
+.main_new2{
+  height:33%;
+  width:282px;
+  margin:20px;
+  background-color: #cfd3da;
+}
+.main_new3{
+  height:33%;
+  width:282px;
+  margin:20px;
+  background-color: #cfd3da;
+}
+.main_new4{
+  height:33%;
+  width:282px;
+  margin:20px;
+  background-color: #cfd3da;
+}
+.main_new5{
+  height:33%;
+  width:282px;
+  margin:20px;
+  background-color: #cfd3da;
+}

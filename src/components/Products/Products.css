@@ -5,7 +5,7 @@
 }
 
 .back{
-height:1000px;
+height:2000px;
 background-color: #FFFBD4;
 
 }
@@ -69,6 +69,23 @@ background-color: #FFFBD4;
     position:fixed;
     margin-top:100px;
     }
+
+
+    
+    .main_main{
+      
+      margin-top: 0px;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid black;
+     border-bottom: 1px solid black;
+    
+    }
+
+
+
+
     .main_man{
       
       margin-top: 0px;

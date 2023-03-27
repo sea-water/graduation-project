@@ -1,0 +1,38 @@
+.Cmain{
+    height:1500px;
+    width:100%;
+    background-image: url("https://www.bodybuilding.com//images/2023/hp/freakmode-1000x750.jpg");
+background-attachment: fixed;
+background-size: cover;
+display:flex;
+    justify-content: center;
+    
+    overflow: auto;
+    overflow: scroll;
+
+}
+.Cmain1>h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.Cmain1{
+    width:70%;
+
+
+
+    background-color:#FFFBD4;
+}
+.cmainhead{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.dss{
+    height:3000px;
+   
+}
+.cmainhead>button{
+    background-color: rgb(248, 216, 155);
+    border-radius: 15%;
+}
