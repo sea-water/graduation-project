@@ -1,5 +1,5 @@
 .Productsmain{
-   
+
     padding-left: 15%;
     padding-top:100px;
     background-color: #FFFBD4;
@@ -21,32 +21,37 @@
 .main_best{
   border-bottom:2px solid black;
   border-top:2px solid black;
-  overflow: auto;
-  overflow-x: scroll;
-  width:3000px;
-  display:flex;
+  width:1400px;
+  
   height:450px;
+box-sizing: border-box;  
+}
+.main_bestscroll{
+  display:flex;
+  flex-direction: row;
+
+  overflow-x: scroll;
   
 }
-.main_best::-webkit-scrollbar{
+.main_bestscroll::-webkit-scrollbar{
   width: 10px;
  
-  color:aqua;
+ 
 }
-.main_best::-webkit-scrollbar-thumb{
+.main_bestscroll::-webkit-scrollbar-thumb{
   background-color: #cfd3da;
   background-clip: padding-box;
     border: 5px solid transparent;
-    width:500px;
+   
   border-radius: 30px;
 
 }
-.main_best::-webkit-scrollbar-track{
-  background-color:rgb(232, 232, 34);
+.main_bestscroll::-webkit-scrollbar-track{
+  background-color:#FFFBD4;
 }
 
 .main_best1{
-  width:282px;
+  min-width:282px;
   margin:20px;
 }
 .main_img1{
@@ -54,7 +59,7 @@
   background-color: gray;
 }
 .main_best2{
-  width:282px;
+  min-width:282px;
   margin:20px;
 }
 .main_img2{
@@ -62,7 +67,7 @@
   background-color: gray;
 }
 .main_best3{
-  width:282px;
+  min-width:282px;
   margin:20px;
 }
 .main_img3{
@@ -70,7 +75,7 @@
   background-color: gray;
 }
 .main_best4{
-  width:282px;
+  min-width:282px;
   margin:20px;
 }
 .main_img4{
@@ -78,10 +83,89 @@
   background-color: gray;
 }
 .main_best5{
-  width:282px;
+  min-width:282px;
   margin:20px;
 }
 .main_img5{
   height:330px;
   background-color: gray;
+}
+.main_new{
+  border-bottom:2px solid black;
+  border-top:2px solid black;
+  width:1400px;
+  height:450px;
+box-sizing: border-box;  
+}
+
+.main_newscroll{
+  display:flex;
+  flex-direction: row;
+
+  overflow-x: scroll;
+  
+}
+.main_newscroll::-webkit-scrollbar{
+  width: 10px;
+ 
+ 
+}
+.main_newscroll::-webkit-scrollbar-thumb{
+  background-color: #cfd3da;
+  background-clip: padding-box;
+    border: 5px solid transparent;
+   
+  border-radius: 30px;
+
+}
+.main_newscroll::-webkit-scrollbar-track{
+  background-color:#FFFBD4;
+}
+
+.main_new1{
+  min-width:282px;
+  margin:20px;
+}
+.new_img1{
+  height:330px;
+  background-color: gray;
+}
+.main_new2{
+  min-width:282px;
+  margin:20px;
+}
+.new_img2{
+  height:330px;
+  background-color: gray;
+}
+.main_new3{
+  min-width:282px;
+  margin:20px;
+}
+.new_img3{
+  height:330px;
+  background-color: gray;
+}
+.main_new4{
+  min-width:282px;
+  margin:20px;
+}
+.new_img4{
+  height:330px;
+  background-color: gray;
+}
+.main_new5{
+  min-width:282px;
+  margin:20px;
+}
+.new_img5{
+  height:330px;
+  background-color: gray;
+}
+.prototype{
+  height:500px;
+  width:100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://andar.co.kr/web/product/medium/202302/d5a089e314a686d9ff15d5c18c2d5678.jpg");
 }
