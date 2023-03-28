@@ -1,6 +1,6 @@
 import React from "react";
 import './Community.css';
-import logo from './img/logo.png';
+import logo from '../img/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {Link,Route,Routes} from 'react-router-dom';

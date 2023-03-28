@@ -48,8 +48,8 @@ const toggleMe =()=>{
           </div>
           </div>
     <aside className="aside_menu">
-  <h2 className="main_main">메인
-  <Link to="/Products"><button className="main_button"><FontAwesomeIcon icon={faChevronRight} /></button></Link></h2>
+    <Link to="/Products"><h2 className="main_main">메인
+  <button className="main_button"><FontAwesomeIcon icon={faChevronRight} /></button></h2></Link>
             <div>
             <h2 className="main_man">남성 의류
             <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
