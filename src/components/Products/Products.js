@@ -95,9 +95,7 @@ const toggleMe =()=>{
         <Route path="manouter" element={<Productsmanouter/>}></Route>
         <Route path="manset" element={<Productsmanset/>}></Route>
       </Routes>
-      <div className="back">
-       {/* 스크롤 예비 */}
-      </div>
+      
       </div>
       
       
