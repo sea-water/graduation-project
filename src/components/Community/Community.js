@@ -14,13 +14,13 @@ export default function Community() {
 <div className="c_header">
 <div className="c_left">
   <FontAwesomeIcon icon={faBars} size="2x"/>
-  <Link to="/"><img  className="c_logo" src={logo} alt="logo"/></Link>
+  <Link to="/" ><img  className="c_logo" src={logo} alt="logo"/></Link>
   </div>
 <div className="c_center">
-<Link to="/Community"><h1>메인</h1></Link>
-  <Link to="Cbest"><h1>베스트</h1></Link>
-  <Link to="Cplatfrom"><h1>플랫폼</h1></Link>
-  <Link to="Cinformation"><h1>정보</h1></Link>
+<Link to="/Community" style={{ textDecoration: "none" ,color:"black"}}><h1>메인</h1></Link>
+  <Link to="Cbest" style={{ textDecoration: "none" ,color:"black"}}><h1>베스트</h1></Link>
+  <Link to="Cplatfrom" style={{ textDecoration: "none" ,color:"black"}}><h1>플랫폼</h1></Link>
+  <Link to="Cinformation" style={{ textDecoration: "none" ,color:"black"}}><h1>정보</h1></Link>
   </div>
 <div className="c_right">
   <input className="c_input" placeholder="무엇이 궁금하세요?"/>

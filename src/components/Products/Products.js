@@ -42,13 +42,13 @@ const toggleMe =()=>{
           </div>  
           <div className="s_login">  
           <FontAwesomeIcon icon={faBasketShopping} size="2x"/>
-          <Link to="/Login"><div>로그인</div></Link>
-          <Link to="/Signup"><div>회원가입</div></Link>
+          <Link to="/Login" style={{ textDecoration: "none" ,color:"black"}}><div>로그인</div></Link>
+          <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div>회원가입</div></Link>
           
           </div>
           </div>
     <aside className="aside_menu">
-    <Link to="/Products"><h2 className="main_main">메인
+    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h2 className="main_main">메인
   <button className="main_button"><FontAwesomeIcon icon={faChevronRight} /></button></h2></Link>
             <div>
             <h2 className="main_man">남성 의류
@@ -56,11 +56,11 @@ const toggleMe =()=>{
             <ul className={isOpen ? "show-menu":"hide-menu"}>
      
          
-            <Link to ="manentire"><li>전체</li></Link>
-            <Link to ="mantop"><li>상의</li></Link>
-            <Link to ="manpants"><li>하의</li></Link>
-            <Link to ="manouter"><li>아우터</li></Link>
-            <Link to ="manset"><li>세트</li></Link>
+            <Link to ="manentire" style={{ textDecoration: "none" ,color:"black"}}><li>전체</li></Link>
+            <Link to ="mantop" style={{ textDecoration: "none" ,color:"black"}}><li>상의</li></Link>
+            <Link to ="manpants" style={{ textDecoration: "none" ,color:"black"}}><li>하의</li></Link>
+            <Link to ="manouter" style={{ textDecoration: "none" ,color:"black"}}><li>아우터</li></Link>
+            <Link to ="manset" style={{ textDecoration: "none" ,color:"black"}}><li>세트</li></Link>
             </ul>
             </div>
             <div><h2 className="main_woman">여성 의류

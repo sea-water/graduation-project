@@ -1,8 +1,0 @@
-.each-slide-effect > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 30rem;
-  background-color: aqua;
-}
