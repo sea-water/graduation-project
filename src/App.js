@@ -9,6 +9,7 @@ import MyPage from "./components/Mypage/MyPage";
 import Signup from "./components/Signup";
 import MyCalendar from "./components/Mypage/MyCalendar";
 import TodoList from "./components/Mypage/Todos";
+import Cart from "./components/Cart";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/Community/*" element={<Community />} />
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart/>}/>
           <Route path="/Signup" element={<Signup />} />
           <Route path="/TodoList" element={<TodoList />} />
           <Route path="/MyCalendar" element={<MyCalendar />} />

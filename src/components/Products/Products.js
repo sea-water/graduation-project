@@ -15,6 +15,19 @@ import Productsmanouter from './Productsmanouter';
 import Productsmanset from './Productsmanset';
  import {Routes,Route} from 'react-router-dom';
 import Productsmain from './Productsmain';
+
+import Wentire from './Wentire';
+import Wleggings from './Wleggings';
+import Wjogger from './Wjogger';
+import Wpants from './Wpants';
+import Wtop from './Wtop';
+import Wouter from './Wouter';
+import Belt from './Belt';
+import Massage from './Massage';
+import Roller from './Roller';
+import Strap from './Strap';
+import Yoga from './Yoga';
+
  function Products(){
   const [isOpen,setMenu]=useState(false);
   const[isOpe,setMen]=useState(false);
@@ -41,15 +54,14 @@ const toggleMe =()=>{
           <input placeholder="원하시는 상품을 검색해 보세요"/> <button> <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" /> </button>   
           </div>  
           <div className="s_login">  
-          <FontAwesomeIcon icon={faBasketShopping} size="2x"/>
+          <Link to ="/Cart"  style={{ textDecoration: "none" ,color:"black"}}><FontAwesomeIcon icon={faBasketShopping} size="2x"/></Link>
           <Link to="/Login" style={{ textDecoration: "none" ,color:"black"}}><div>로그인</div></Link>
           <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div>회원가입</div></Link>
           
           </div>
           </div>
     <aside className="aside_menu">
-    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h2 className="main_main">메인
-  <button className="main_button"><FontAwesomeIcon icon={faChevronRight} /></button></h2></Link>
+    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h1 className="main_main">메인으로 돌아가기</h1></Link>
             <div>
             <h2 className="main_man">남성 의류
             <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
@@ -66,24 +78,23 @@ const toggleMe =()=>{
             <div><h2 className="main_woman">여성 의류
             <button className="woman_button" onClick={()=>toggleMen()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
             <ul className={isOpe?"show":"hide"}>
-            <li>전체</li>
-            <li>레깅스</li>
-            <li>조거팬츠</li>
-            <li>티셔츠</li>
-            <li>아우터</li>
-            <li>하의</li>
-            <li>상의</li>
-            <li>운동 별 추천</li>
+            <Link to ="wentire" style={{ textDecoration: "none" ,color:"black"}}><li>전체</li></Link>
+            <Link to ="wleggings" style={{ textDecoration: "none" ,color:"black"}}><li>레깅스</li></Link>
+            <Link to ="wjogger" style={{ textDecoration: "none" ,color:"black"}}><li>조거팬츠</li></Link>
+            <Link to ="wouter" style={{ textDecoration: "none" ,color:"black"}}><li>아우터</li></Link>
+            <Link to ="wtop" style={{ textDecoration: "none" ,color:"black"}}><li>하의</li></Link>
+            <Link to ="wpants" style={{ textDecoration: "none" ,color:"black"}}><li>상의</li></Link>
+            
             </ul>
             </div>
             <div><h2 className="main_gym">운동 보조 기구
             <button className="gym_button" onClick={()=>toggleMe()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
             <ul className={isOp?"show_3":"hide_3"}>
-            <li>스트랩</li>
-            <li>마사지</li>
-            <li>요가 매트</li>
-            <li>폼 롤러</li>
-            <li>벨트</li>
+            <Link to ="strap" style={{ textDecoration: "none" ,color:"black"}}><li>스트랩</li></Link>
+            <Link to ="massage" style={{ textDecoration: "none" ,color:"black"}}><li>마사지</li></Link>
+            <Link to ="yoga" style={{ textDecoration: "none" ,color:"black"}}><li>요가 매트</li></Link>
+            <Link to ="roller" style={{ textDecoration: "none" ,color:"black"}}><li>폼 롤러</li></Link>
+            <Link to ="belt" style={{ textDecoration: "none" ,color:"black"}}><li>벨트</li></Link>
             
             </ul>
             </div>
@@ -97,6 +108,20 @@ const toggleMe =()=>{
         <Route path="manpants" element={<Productsmanpants/>}></Route>
         <Route path="manouter" element={<Productsmanouter/>}></Route>
         <Route path="manset" element={<Productsmanset/>}></Route>
+
+<Route path="wentire" element={<Wentire/>}></Route>
+<Route path="wleggings" element={<Wleggings/>}></Route>
+<Route path="wjogger" element={<Wjogger/>}></Route>
+<Route path="Wouter" element={<Wouter/>}></Route>
+<Route path="Wpants" element={<Wpants/>}></Route>
+<Route path="Wtop" element={<Wtop/>}></Route>
+
+<Route path="belt" element={<Belt/>}></Route>
+<Route path="massage" element={<Massage/>}></Route>
+<Route path="roller" element={<Roller/>}></Route>
+<Route path="strap" element={<Strap/>}></Route>
+<Route path="yoga" element={<Yoga/>}></Route>
+
       </Routes>
     
       </div>

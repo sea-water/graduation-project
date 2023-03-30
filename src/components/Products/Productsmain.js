@@ -1,6 +1,6 @@
 import React from 'react';
 import './Productsmain.css';
-import advertisement from '../img/advertisement.png';
+import advertisement from '../img/showingmallad.jpg';
 function Productsmain() {
     return (
         <div className="Productsmain">

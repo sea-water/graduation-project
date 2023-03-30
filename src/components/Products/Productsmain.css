@@ -14,34 +14,29 @@
   
  }
   .advertisement>img{
-    width:115%;
-    height:550px;
+    width:90%;
+    height:400px;
     background-size: cover;
   }
 .main_best{
   border-bottom:2px solid black;
   border-top:2px solid black;
   width:1400px;
-  
   height:450px;
-box-sizing: border-box;  
+  box-sizing: border-box;  
 }
 .main_bestscroll{
   display:flex;
   flex-direction: row;
-
   overflow-x: scroll;
-  
 }
 .main_bestscroll::-webkit-scrollbar{
   width: 10px;
- 
- 
 }
 .main_bestscroll::-webkit-scrollbar-thumb{
   background-color: #cfd3da;
   background-clip: padding-box;
-    border: 5px solid transparent;
+  border: 5px solid transparent;
    
   border-radius: 30px;
 
@@ -163,6 +158,7 @@ box-sizing: border-box;
   background-color: gray;
 }
 .prototype{
+  margin-top: 10px;
   height:500px;
   width:100%;
   background-attachment: fixed;
