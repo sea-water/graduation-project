@@ -8,48 +8,48 @@
  background-attachment: fixed;
  overflow:scroll;
 }
-
+.cmain_ab{
+    box-sizing: border-box;
+    height:320px;
+    width:100%;
+    padding:20px;
+   
+}
+.cmain_a{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-image:url(../img/coad.jpg);
+}
 .cmain_main{
  
- width:60%;
- height:2000px;
- background-color: #FFFBD4;
+ width:70%;
+ height:1100px;
+ background-color: #FFFF;
 
 }
-.cmain_search>h1{
-    width:50%;
+
+.cmain_button{
     display:flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
+
+.cmain_crud>div>button{
+    background-image:linear-gradient(#B98EFF,white);
+    border-radius: 5px;
+    display:flex;
+    border:none;
+    height:30px;
+    width:70px;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
 }
-
-.cmain_search{
+.crud_map{
     display:flex;
-
-    justify-content:space-around;
-    height:300px;
-    
-}
-.cmain_search>div{
-    margin-top: 20px;
-}
-.cmain_input{
-    height:30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: #FFFBD4;
-}
-.cmain_button{
-height:30px;
-border:none;
-background-color: #FFFBD4;
-}
-.cmain_crud{
-    display:flex;
-    
-    justify-content: center;
-    height:500px;
-    
+    width:100%;
+    flex-wrap: wrap;
 }

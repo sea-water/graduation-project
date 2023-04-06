@@ -22,11 +22,12 @@ import Wjogger from './Wjogger';
 import Wpants from './Wpants';
 import Wtop from './Wtop';
 import Wouter from './Wouter';
-import Belt from './Belt';
-import Massage from './Massage';
-import Roller from './Roller';
 import Strap from './Strap';
-import Yoga from './Yoga';
+// import Belt from './Belt';
+// import Massage from './Massage';
+// import Roller from './Roller';
+
+// import Yoga from './Yoga';
 
  function Products(){
   const [isOpen,setMenu]=useState(false);
@@ -61,7 +62,7 @@ const toggleMe =()=>{
           </div>
           </div>
     <aside className="aside_menu">
-    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h1 className="main_main">메인으로 돌아가기</h1></Link>
+    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h1 className="main_main">메인으로 </h1></Link>
             <div>
             <h2 className="main_man">남성 의류
             <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
@@ -87,14 +88,14 @@ const toggleMe =()=>{
             
             </ul>
             </div>
-            <div><h2 className="main_gym">운동 보조 기구
-            <button className="gym_button" onClick={()=>toggleMe()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
+            <div> <Link to ="strap" style={{ textDecoration: "none" ,color:"black"}}><h2 className="main_gym">보조 기구
+            <button className="gym_button" onClick={()=>toggleMe()}><FontAwesomeIcon icon={faChevronRight} /></button></h2></Link>
             <ul className={isOp?"show_3":"hide_3"}>
-            <Link to ="strap" style={{ textDecoration: "none" ,color:"black"}}><li>스트랩</li></Link>
-            <Link to ="massage" style={{ textDecoration: "none" ,color:"black"}}><li>마사지</li></Link>
-            <Link to ="yoga" style={{ textDecoration: "none" ,color:"black"}}><li>요가 매트</li></Link>
-            <Link to ="roller" style={{ textDecoration: "none" ,color:"black"}}><li>폼 롤러</li></Link>
-            <Link to ="belt" style={{ textDecoration: "none" ,color:"black"}}><li>벨트</li></Link>
+    <li>스트랩</li>
+        <li>마사지</li>
+          <li>요가 매트</li>
+         <li>폼 롤러</li>
+           <li>벨트</li>
             
             </ul>
             </div>
@@ -116,11 +117,11 @@ const toggleMe =()=>{
 <Route path="Wpants" element={<Wpants/>}></Route>
 <Route path="Wtop" element={<Wtop/>}></Route>
 
-<Route path="belt" element={<Belt/>}></Route>
+<Route path="strap" element={<Strap/>}></Route>
+{/* <Route path="belt" element={<Belt/>}></Route>
 <Route path="massage" element={<Massage/>}></Route>
 <Route path="roller" element={<Roller/>}></Route>
-<Route path="strap" element={<Strap/>}></Route>
-<Route path="yoga" element={<Yoga/>}></Route>
+<Route path="yoga" element={<Yoga/>}></Route> */}
 
       </Routes>
     

@@ -1,0 +1,40 @@
+.cmain_crud{
+    height:500px;
+}
+.crud_main{
+    display:flex;
+    flex-wrap: wrap;
+}
+.crud_first{
+    box-sizing: border-box;
+    border-radius: 10px;
+    height:250px;
+    margin:25px;
+    width:20%;
+   border:1px solid black;
+   background-image:linear-gradient(#B98EFF,white);
+}
+.crud_first>h3{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.crud_first>img{
+    height:100px;
+    width:100px;
+}
+.crud_button{
+    display:flex;
+    justify-content: center;
+}
+.crud_first>div>button{
+    border:none;
+    background-color: #FFFF;
+    height:30px;
+    width:70%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.crud_list{
+    font-size: small;
+}
