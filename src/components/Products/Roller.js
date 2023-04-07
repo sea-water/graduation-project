@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Rmain from "./Rmain";
 function Roller(props) {
+    const names=[["이름2",1231],["이름",1231],["이름",1231],["이름",1231],["이름",1231],["이름",1231],["이름",1231],["이름",1231]];
+    const namelist=names.map((v)=>(<Rmain name={v[0]} price={v[1]}/>));
     return (
-        <div>
-            폼 롤러입니다.
+        <div className="Rap_main">
+           {namelist}
         </div>
     );
 }

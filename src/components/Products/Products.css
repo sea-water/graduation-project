@@ -12,7 +12,7 @@
   border-radius: 30px;
 }
 .Products::-webkit-scrollbar-track{
-  background-color:#B98EFF;
+  background-color: #DDB2FF;
 }
 .Sheader{
     display:flex;
@@ -68,7 +68,7 @@
     .aside_menu{
     width:15%;
     height:1400px;
-    background-color:#B98EFF;
+    background-color: white;
     margin:0px;
     position:fixed;
     margin-top:100px;
@@ -99,7 +99,7 @@
     
     }
     .man_button{
-      background-color:#B98EFF;
+      background-color: white;
       border:0px;
     }
     li{
@@ -137,7 +137,7 @@
     
     }
     .woman_button{
-      background-color:#B98EFF;
+      background-color: white;
       border:0px;
     }
     .show{
@@ -172,7 +172,7 @@
     
     }
     .gym_button{
-      background-color:#B98EFF;
+      background-color: white;
       border:0px;
     }
     .show_3{

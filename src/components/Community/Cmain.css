@@ -38,7 +38,8 @@
 
 }
 
-.cmain_crud>div>button{
+.cmain_bt{
+    
     background-image:linear-gradient(#B98EFF,white);
     border-radius: 5px;
     display:flex;
@@ -52,4 +53,8 @@
     display:flex;
     width:100%;
     flex-wrap: wrap;
+}
+.cmain_next{
+    display:flex;
+    justify-content: center;
 }

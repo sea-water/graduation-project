@@ -1,57 +1,25 @@
 import React from 'react';
-import './Productsmantop.css';
+import './Productsmanentire.css';
+import Manentiremap from './Manentiremap';
 function Productsmantop() {
+    const entires=[["https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg","셔츠","48411"],
+    ["https://andar.co.kr/web/product/medium/202303/c9244b8bde16f8a1c69a76c2a6e369b7.jpg","롱슬리브","48411"],
+    ["https://andar.co.kr/web/product/small/202303/b29a922033c76acf987dc00affb15314.jpg","카라반팔","48411"],
+    ["https://andar.co.kr/web/product/medium/202303/967ca25b8acab37801febdb4a2896e4a.jpg","반팔","48411"],
+    ["https://andar.co.kr/web/product/small/202303/de6b9f3a679debcfd7f3ac7612a67605.jpg","넥반팔","48411"],
+    ["https://andar.co.kr/web/product/small/202302/10679728c6b46bb0e45f57f2f64d8aef.jpg","셔츠반팔","48411"],
+    ["https://andar.co.kr/web/product/medium/202211/099c99e2acc757d33389706184f377ec.jpg","그린 반팔","48411"],
+    ["https://andar.co.kr/web/product/small/202211/675e5162cbda20e958565aae4f390e21.jpg","블랙 롱 슬리브","48411"]
+];
+    const manentire=entires.map((v)=>(<Manentiremap img={v[0]} name={v[1]} price={v[2]}/>));
     return (
-        <div className="Productsmantop">
+        <div className="Productsmanentire">
     
-    <div className="shopping_top1">
-      <div className="mantop_1">
+    <div className="shopping_main">
+      <div className="shopping_1">
+{manentire}
 
-<div className="top_1">
-<div className="top1_img"></div>
-<div className="top1_text"><h3>에센셜 티셔츠</h3>
-가격:55632원
-</div>
-</div>
 
-<div className="top_2">
-<div className="top2_img"></div>
-<div className="top2_text"><h3>폴로 티셔츠</h3>
-가격:56632원</div>
-</div>
-<div className="top_3">
-<div className="top3_img"></div>
-<div className="top3_text"><h3>오픈 카라 숏슬리브</h3>
-가격:56632원</div>
-</div>
-<div className="top_4">
-<div className="top4_img"></div>
-<div className="top4_text"><h3>에어리핏 맨즈 티셔츠</h3>
-가격:56632원</div>
-</div>
-</div>
-
-<div className="mantop_2">
-<div className="top_5">
-<div className="top5_img"></div>
-<div className="top5_text"><h3>포켓 숏슬리브</h3>
-가격:56632원</div>
-</div>
-<div className="top_6">
-<div className="top6_img"></div>
-<div className="top6_text"><h3>맨즈 롱슬리브</h3>
-가격:56632원</div>
-</div>
-<div className="top_7">
-<div className="top7_img"></div>
-<div className="top7_text"><h3>그린 맨즈 숏 슬리브</h3>
-가격:56632원</div>
-</div>
-<div className="top_8">
-<div className="top8_img"></div>
-<div className="top8_text"><h3>에어리핏 맨즈 롱 슬리브</h3>
-가격:56632원</div>
-</div>
 </div>
 
 
