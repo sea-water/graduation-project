@@ -5,7 +5,7 @@ import './Products.css';
  import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
  import {faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
  import logo from '../img/logo.png';
-import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+
 import {useState} from "react";
 import {Link} from 'react-router-dom';
 import Productsmanentire from './Productsmanentire';
@@ -28,16 +28,13 @@ import Aids from './Aids';
  function Products(){
   const [isOpen,setMenu]=useState(false);
   const[isOpe,setMen]=useState(false);
-  const[isOp,setMe]=useState(false);
 const toggleMenu =()=>{
   setMenu(isOpen=>!isOpen);
 };
 const toggleMen =()=>{
   setMen(isOpe=>!isOpe);
 };
-const toggleMe =()=>{
-  setMe(isOpe=>!isOpe);
-};
+
   return (
        <div className="Products">
     <div className="Sheader">
@@ -58,38 +55,30 @@ const toggleMe =()=>{
           </div>
           </div>
     <aside className="aside_menu">
-    <Link to="/Products" style={{ textDecoration: "none" ,color:"black"}}><h1 className="main_main">go to main</h1></Link>
+    <Link to="/Products" style={{ textDecoration: "none" }}><h1 className="main_main">메인으로</h1></Link>
             <div>
-            <h2 className="main_man">Man
-            <button className="man_button" onClick={()=>toggleMenu()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
+            <h3 className="main_man" onClick={()=>toggleMenu()}>남성의류</h3>
             <ul className={isOpen ? "show-menu":"hide-menu"}>
-     
-         
-            <Link to ="manentire" style={{ textDecoration: "none" ,color:"black"}}><li>전체</li></Link>
-            <Link to ="mantop" style={{ textDecoration: "none" ,color:"black"}}><li>상의</li></Link>
-            <Link to ="manpants" style={{ textDecoration: "none" ,color:"black"}}><li>하의</li></Link>
-            <Link to ="manouter" style={{ textDecoration: "none" ,color:"black"}}><li>아우터</li></Link>
-            <Link to ="manset" style={{ textDecoration: "none" ,color:"black"}}><li>세트</li></Link>
+            <Link to ="manentire" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">전체</li></Link>
+            <Link to ="mantop" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu2">상의</li></Link>
+            <Link to ="manpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu3">하의</li></Link>
+            <Link to ="manouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu4">아우터</li></Link>
+            <Link to ="manset" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu5">세트</li></Link>
             </ul>
             </div>
-            <div><h2 className="main_woman">Woman
-            <button className="woman_button" onClick={()=>toggleMen()}><FontAwesomeIcon icon={faChevronRight} /></button></h2>
+            <div><h3 className="main_woman" onClick={()=>toggleMen()}>여성의류</h3>
             <ul className={isOpe?"show":"hide"}>
-            <Link to ="wentire" style={{ textDecoration: "none" ,color:"black"}}><li>전체</li></Link>
-            <Link to ="wleggings" style={{ textDecoration: "none" ,color:"black"}}><li>레깅스</li></Link>
-            <Link to ="wjogger" style={{ textDecoration: "none" ,color:"black"}}><li>조거팬츠</li></Link>
-            <Link to ="wouter" style={{ textDecoration: "none" ,color:"black"}}><li>아우터</li></Link>
-            <Link to ="wpants" style={{ textDecoration: "none" ,color:"black"}}><li>하의</li></Link>
-            <Link to ="wtops" style={{ textDecoration: "none" ,color:"black"}}><li>상의</li></Link>
+            <Link to ="wentire" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">전체</li></Link>
+            <Link to ="wleggings" style={{ textDecoration: "none" ,color:"black"}}><li className="show2">레깅스</li></Link>
+            <Link to ="wjogger" style={{ textDecoration: "none" ,color:"black"}}><li className="show3">조거팬츠</li></Link>
+            <Link to ="wouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show4">아우터</li></Link>
+            <Link to ="wpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show5">하의</li></Link>
+            <Link to ="wtops" style={{ textDecoration: "none" ,color:"black"}}><li className="show6">상의</li></Link>
             
             </ul>
             </div>
-            <div> <Link to ="Aids" style={{ textDecoration: "none" ,color:"black"}}><h2 className="main_gym">Aids
-            <button className="gym_button" onClick={()=>toggleMe()}><FontAwesomeIcon icon={faChevronRight} /></button></h2></Link>
-            <ul className={isOp?"show_3":"hide_3"}>
-           
-            
-            </ul>
+            <div> <Link to ="Aids/strap" style={{ textDecoration: "none" ,color:"black"}}><h3 className="main_gym">보조기구</h3></Link>
+          
             </div>
             
           </aside>

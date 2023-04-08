@@ -39,11 +39,11 @@
 }
 
 .cmain_bt{
-    
+    border:1px solid black;
     background-image:linear-gradient(#B98EFF,white);
     border-radius: 5px;
     display:flex;
-    border:none;
+   
     height:30px;
     width:70px;
     align-items: center;

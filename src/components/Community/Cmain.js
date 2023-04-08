@@ -32,7 +32,7 @@ function Cmain() {
             <div className="cmain_crud">
                 
                 <div className="cmain_button">
-                <Link to="/Community/Cbest">
+                <Link to="/Community/Cbest" style={{ textDecoration: "none" ,color:"black"}}>
             <button className="cmain_bt">글 작성</button>
             </Link>
             </div>

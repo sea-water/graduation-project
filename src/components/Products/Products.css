@@ -1,6 +1,7 @@
 .Products{
   overflow-y:scroll;
   height:760px;
+  background-image: url("../img/showingpage.png");
 }
 .Products::-webkit-scrollbar{
   width: 20px;
@@ -74,10 +75,11 @@
     margin-top:100px;
     }
     .main_main{
+      color:#ffff;
       font-size: 25px;
       margin-top: 0px;
       display:flex;
-      background-color: #ffff;
+      background-color: #6140A0;
       justify-content: space-around;
       align-items: center;
       border-top: 1px solid black;
@@ -88,32 +90,47 @@
       background-color: #ffff;
       border:0px;
     }
+
+
     .main_man{
-      
+      background-color: #DDB2FF;
       margin-top: 0px;
+      color:#ffff;
       display:flex;
       justify-content: space-around;
       align-items: center;
-      border-top: 1px solid black;
-     border-bottom: 1px solid black;
+
     
     }
-    .man_button{
-      background-color: white;
-      border:0px;
-    }
+   
+
+
     li{
       list-style: none;
     }
     .show-menu{
       background-color: #ffff;
-      padding-left:20px;
+      padding:0;
       margin:0;
-      width: 90%;
-      height: 120px;
+      width: 100%;
+      height: 130px;
       position: relative;
-      left: 0px;
       transition: 0.1s;
+      }
+      .show-menu1:hover{
+        background-color: #e5c7fb;
+      }
+      .show-menu2:hover{
+        background-color: #e5c7fb;
+      }
+      .show-menu3:hover{
+        background-color: #e5c7fb;
+      }
+      .show-menu4:hover{
+        background-color: #e5c7fb;
+      }
+      .show-menu5:hover{
+        background-color: #e5c7fb;
       }
       
       .hide-menu{
@@ -122,35 +139,52 @@
       width: 100%;
       height: 0px;
       position: relative;
-      left: -150px;
+      left: -250px;
       transition: 0.1s;
       }
     
     
     
     .main_woman{
+      background-color: #DDB2FF;
+      margin-top: 0px;
+      color:#ffff;
       display:flex;
       justify-content: space-around;
       align-items: center;
-      border-top: 1px solid black;
-     border-bottom: 1px solid black;
     
     }
-    .woman_button{
-      background-color: white;
-      border:0px;
-    }
+  
     .show{
       background-color: #ffff;
-      padding-left:20px;
+      padding:0;
       margin:0;
-      width: 90%;
-      height: 190px;
+      width: 100%;
+      height: 160px;
       position: relative;
       left: 0px;
       transition: 0.1s;
-      }
       
+      }
+      .show1:hover{
+        background-color: #e5c7fb;
+       
+      }
+      .show2:hover{
+        background-color: #e5c7fb;
+      }
+      .show3:hover{
+        background-color: #e5c7fb;
+      }
+      .show4:hover{
+        background-color: #e5c7fb;
+      }
+      .show5:hover{
+        background-color: #e5c7fb;
+      }
+      .show6:hover{
+        background-color: #e5c7fb;
+      }
       .hide{
         opacity: 0;
         padding:0;
@@ -164,11 +198,12 @@
     
     
     .main_gym{
+      background-color: #DDB2FF;
+      margin-top: 0px;
+      color:#ffff;
       display:flex;
       justify-content: space-around;
       align-items: center;
-      border-top: 1px solid black;
-     border-bottom: 1px solid black;
     
     }
     .gym_button{

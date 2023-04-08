@@ -4,6 +4,7 @@
 .crud_main{
     display:flex;
     flex-wrap: wrap;
+    background-image: url("../img/showingpage.png");
 }
 .crud_first{
     box-sizing: border-box;

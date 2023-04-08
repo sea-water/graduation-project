@@ -5,7 +5,7 @@ import {Link,Route,Routes} from "react-router-dom";
 import Mat from './Mat';
 import Roller from './Roller';
 import Strap from './Strap';
-import Aidsmain from './Aidsmain';
+
 const Aids=()=>{
    
     return (
@@ -16,10 +16,10 @@ const Aids=()=>{
             <div className="rap_hr"></div>
             <div className="rap_header"><h1>-운동 보조 기구-</h1></div>
             <ul>
-                <Link to="strap"><li className="line">스트랩</li></Link>
-                <Link to="mat"><li className="line">요가 매트</li></Link>
-                <Link to="roller"><li className="line">폼 롤러</li></Link>
-                <Link to="belt"><li >벨트</li></Link>
+                <Link to="strap" style={{ textDecoration: "none" ,color:"black"}}><li className="line">스트랩</li></Link>
+                <Link to="mat" style={{ textDecoration: "none" ,color:"black"}}><li className="line">요가 매트</li></Link>
+                <Link to="roller" style={{ textDecoration: "none" ,color:"black"}}><li className="line">폼 롤러</li></Link>
+                <Link to="belt" style={{ textDecoration: "none" ,color:"black"}}><li >벨트</li></Link>
                
             </ul>
             <div className="rap_select">
@@ -31,14 +31,15 @@ const Aids=()=>{
             </div>
             </div>
            <Routes>
-           <Route path="/" element={<Aidsmain/>}></Route>
-                <Route path="strap" element={<Strap/>}></Route>
+           
+                <Route path="strap/*" element={<Strap/>}></Route>
                 <Route path="mat" element={<Mat/>}></Route>
                 <Route path="roller" element={<Roller/>}></Route>
                 <Route path="belt" element={<Belt/>}></Route>
             </Routes>
-
-         
+            <div className="rap_next">
+    <button>이전</button><div>12345</div><button>다음</button>
+    </div>
         </div>
     );
 }
