@@ -1,10 +1,10 @@
 import React from 'react';
 import './Aids.css';
-import Belt from "./Belt";
+import Yoga from "./Yoga";
 import {Link,Route,Routes} from "react-router-dom";
-import Mat from './Mat';
-import Roller from './Roller';
-import Strap from './Strap';
+import Pilates from './Pilates';
+import Golf from './Golf';
+import Gym from './Gym';
 
 const Aids=()=>{
    
@@ -14,12 +14,12 @@ const Aids=()=>{
             
         
             <div className="rap_hr"></div>
-            <div className="rap_header"><h1>-운동 보조 기구-</h1></div>
+            <div className="rap_header"><h1>-헬스장 바로가기-</h1></div>
             <ul>
-                <Link to="strap" style={{ textDecoration: "none" ,color:"black"}}><li className="line">스트랩</li></Link>
-                <Link to="mat" style={{ textDecoration: "none" ,color:"black"}}><li className="line">요가 매트</li></Link>
-                <Link to="roller" style={{ textDecoration: "none" ,color:"black"}}><li className="line">폼 롤러</li></Link>
-                <Link to="belt" style={{ textDecoration: "none" ,color:"black"}}><li >벨트</li></Link>
+                <Link to="gym" style={{ textDecoration: "none" ,color:"black"}}><li className="line">헬스장</li></Link>
+                <Link to="Pilates" style={{ textDecoration: "none" ,color:"black"}}><li className="line">필라테스</li></Link>
+                <Link to="Golf" style={{ textDecoration: "none" ,color:"black"}}><li className="line">골프</li></Link>
+                <Link to="Yoga" style={{ textDecoration: "none" ,color:"black"}}><li >요가</li></Link>
                
             </ul>
             <div className="rap_select">
@@ -32,10 +32,10 @@ const Aids=()=>{
             </div>
            <Routes>
            
-                <Route path="strap/*" element={<Strap/>}></Route>
-                <Route path="mat" element={<Mat/>}></Route>
-                <Route path="roller" element={<Roller/>}></Route>
-                <Route path="belt" element={<Belt/>}></Route>
+                <Route path="gym/*" element={<Gym/>}></Route>
+                <Route path="Pilates" element={<Pilates/>}></Route>
+                <Route path="Golf" element={<Golf/>}></Route>
+                <Route path="Yoga" element={<Yoga/>}></Route>
             </Routes>
             <div className="rap_next">
     <button>이전</button><div>12345</div><button>다음</button>

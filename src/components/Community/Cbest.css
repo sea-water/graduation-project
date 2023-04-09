@@ -63,9 +63,12 @@ align-items: center;
     height: 30px;
    }
    .cbest_button>button{
-    background-image:linear-gradient(#B98EFF,white);
+      box-shadow: 2px 2px 2px 2px gray;
+      color:#ffff;
+      border:none;
+      background-color:#B98EFF;
     border-radius: 5px;
-    border:1px solid black;
+  
     align-items: center;
     justify-content: center;
     margin-left: 8px;

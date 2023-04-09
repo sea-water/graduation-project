@@ -17,7 +17,7 @@ function Cbest(props) {
                     </div>
                     <div className="cbest_button">
                     <button>등록하기</button>
-                    <button><Link to="strap"style={{ textDecoration: "none" ,color:"black"}}>목록으로</Link></button>
+                    <button><Link to="strap"style={{ textDecoration: "none" ,color:"#ffff"}}>목록으로</Link></button>
                     </div>
                 </from>
             </div>

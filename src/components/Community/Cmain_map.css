@@ -1,5 +1,5 @@
 .cmain_crud{
-    height:700px;
+    height:730px;
 }
 .crud_main{
     display:flex;
@@ -7,15 +7,19 @@
     background-image: url("../img/showingpage.png");
 }
 .crud_first{
+    
+    box-shadow: 5px 5px 5px 5px gray;
     box-sizing: border-box;
-    border-radius: 10px;
-    height:250px;
+    border-radius: 30px;
+    height:270px;
     margin:25px;
     width:20%;
-   border:1px solid black;
+   border:none;
    background-image:linear-gradient(#B98EFF,white);
 }
 .crud_first>h3{
+    font-size: small;
+    font-family: 'Noto Sans KR', sans-serif;
     display:flex;
     justify-content: center;
     margin-top: 10px;
@@ -37,5 +41,6 @@
     margin-top: 10px;
 }
 .crud_list{
+   
     font-size: small;
 }
