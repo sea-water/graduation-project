@@ -1,0 +1,305 @@
+.Products {
+  overflow: auto;
+  overflow: ;
+  height: 2500px;
+}
+
+.s_header {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.s_input > input {
+  background-color: white;
+  height: 30px;
+  width: 400px;
+
+  border-right: 0px;
+  border-top: 0px;
+  border-left: 0px;
+}
+
+.s_input > button {
+  background-color: white;
+  height: 30px;
+  border: 0px;
+}
+
+.s_logo {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s_logo > a > img {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  height: 100px;
+}
+
+.s_login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+}
+
+aside {
+  width: 15%;
+  height: 1400px;
+  background-color: white;
+  margin: 0px;
+  position: fixed;
+  margin-top: 100px;
+}
+.main_man {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.man_button {
+  background-color: #ffff;
+  border: 0px;
+}
+li {
+  list-style: none;
+}
+.show-menu {
+  padding-left: 20px;
+  margin: 0;
+  width: 90%;
+  height: 120px;
+  position: relative;
+  left: 0px;
+  transition: 0.1s;
+}
+
+.hide-menu {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0px;
+  position: relative;
+  left: -150px;
+  transition: 0.1s;
+}
+
+.main_woman {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.woman_button {
+  background-color: #ffff;
+  border: 0px;
+}
+.show {
+  padding-left: 20px;
+  margin: 0;
+  width: 90%;
+  height: 190px;
+  position: relative;
+  left: 0px;
+  transition: 0.1s;
+}
+
+.hide {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0px;
+  position: relative;
+  left: -150px;
+  transition: 0.1s;
+}
+
+.main_gym {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.gym_button {
+  background-color: #ffff;
+  border: 0px;
+}
+.show_3 {
+  padding-left: 20px;
+  margin: 0;
+  width: 90%;
+  height: 170px;
+  position: relative;
+  left: 0px;
+  transition: 0.1s;
+}
+
+.hide_3 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0px;
+  position: relative;
+  left: -150px;
+  transition: 0.1s;
+}
+
+.aside_menu > div > div {
+  margin: 5px;
+  padding-left: 10px;
+}
+.shopping_main {
+  padding-left: 15%;
+  padding-top: 100px;
+  background-color: #fffbd4;
+  width: 100%;
+  height: 2500px;
+  display: flex;
+  flex-direction: column;
+}
+.mainpage {
+  display: flex;
+  height: 1500px;
+  flex-direction: row;
+}
+.shopping_1 {
+  width: 100%;
+  display: flex;
+  height: 500px;
+}
+
+.main_1 {
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+}
+.main1_img {
+  height: 330px;
+  background-size: cover;
+  background-image: url("https://andar.co.kr/web/product/small/202303/bbfe47bb11413fcc1f24283eaf759442.jpg");
+}
+
+.main_2 {
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+}
+.main2_img {
+  height: 330px;
+  background-size: cover;
+  background-image: url("https://andar.co.kr/web/product/medium/202010/cffb58d95d0a3361257758c977b2bbd9.jpg");
+}
+
+.main_3 {
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+}
+.main3_img {
+  height: 330px;
+  background-size: cover;
+  background-image: url("https://andar.co.kr/web/product/small/202303/3549915671c81d71e228982dc0e11b5a.jpg");
+}
+.main_4 {
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+}
+.main4_img {
+  height: 330px;
+  background-size: cover;
+  background-image: url("https://andar.co.kr/web/product/small/202303/72a0fbd95c55b96d2bb1b9d653fe6192.jpg");
+}
+
+.shopping_2 {
+  width: 100%;
+  display: flex;
+  height: 500px;
+}
+
+.main_5 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202205/df3cad6a6a569883caf64053e40ad5a3.jpg");
+}
+
+.main_6 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202106/040e4f46d500cdc1703517abb2b0aa0a.jpg");
+}
+
+.main_7 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202106/978174afe45f488b1d1a302c7743ed39.jpg");
+}
+
+.main_8 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202010/5d7b977366b8421328037815ad0fb68d.jpg");
+}
+
+.shopping_3 {
+  width: 100%;
+  display: flex;
+  height: 500px;
+}
+
+.main_9 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202009/71deeb07387c1b613bb926245afaf511.jpg");
+}
+
+.main_10 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202110/166932e49adf5bcf8af2684b298f652f.jpg");
+}
+
+.main_11 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202207/3971b0546166625f12d65c03d7e1c7e3.jpg");
+}
+
+.main_12 {
+  background-size: cover;
+  margin: 20px;
+  width: 25%;
+  height: 400px;
+  background-image: url("https://andar.co.kr/web/product/medium/202106/a3026968bfe87689ad61ff206677b934.jpg");
+}

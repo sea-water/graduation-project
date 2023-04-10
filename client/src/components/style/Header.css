@@ -1,0 +1,48 @@
+.banner {
+  display: flex;
+}
+
+.bannerBtn {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  margin-top: 25px;
+  padding: 7px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.bannerTitle {
+  font-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(170, 161, 161);
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.bannerLogo {
+  height: 80px;
+  width: 80px;
+}

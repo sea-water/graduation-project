@@ -1,0 +1,12 @@
+.logo_meaning {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  width: 25rem;
+  border-radius: 15px;
+}
+
+.div_banner {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
