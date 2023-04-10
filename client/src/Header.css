@@ -1,0 +1,36 @@
+.banner {
+  display: flex;
+}
+
+.bannerBtn {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  padding: 7px;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.bannerTitle {
+  font-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(170, 161, 161);
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
