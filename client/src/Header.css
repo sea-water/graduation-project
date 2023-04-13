@@ -1,5 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.top_banner {
+  background-color: white;
+}
+
+div {
+  font-family: oneFont;
+}
+
+.container_text {
+  float: right;
+  font-size: x-large;
+  font-family: "oneFontTitle";
+}
+
 .banner {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 }
 
 .bannerBtn {
@@ -7,30 +32,50 @@
   border-radius: 5px;
   border: none;
   width: fit-content;
-  padding: 7px;
+  padding: 20px;
   margin: 3px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .bannerTitle {
   font-style: none;
+  font-family: oneFont;
+}
+
+.mid_banner {
+  width: 100%;
+  margin-top: 100px;
 }
 
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
   color: rgb(170, 161, 161);
 }
+
 a:focus {
   text-decoration: none;
 }
+
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.bannerLogo {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.gym {
+  width: 30rem;
+  height: 300px;
 }

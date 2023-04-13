@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit&family=Noto+Sans+KR:wght@700;900&family=Rubik+Pixels&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital@1&family=Noto+Sans+KR:wght@700;900&family=Rubik+Pixels&display=swap');
-.App{
-    font-family: 'Rubik Pixels', cursive;
-    font-family: 'Anton', sans-serif;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Kanit', sans-serif;
-font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Rubik Pixels', cursive;
+@font-face {
+  font-family: oneFontTitle;
+  src: url(../src/font/ONE\ Mobile\ Title.ttf);
+}
+
+@font-face {
+  font-family: oneFont;
+  src: url(../src/font/ONE\ Mobile\ Regular.ttf);
 }
