@@ -4,10 +4,9 @@ import Header from "./Header";
 import Login from "./Login";
 import Products from "./Products/Products";
 import Community from "./Community/Community";
-import MyPage from "./Mypage/MyPage";
+import MyPage from "./Todo/MyPage";
 import Signup from "./Signup";
-import MyCalendar from "./Mypage/MyCalendar";
-import TodoList from "./Mypage/Todos";
+import TodoList from "./Todo/Todos";
 import Cart from "./Cart";
 
 export default function App() {
@@ -23,7 +22,6 @@ export default function App() {
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/TodoList" element={<TodoList />} />
-          <Route path="/MyCalendar" element={<MyCalendar />} />
         </Routes>
       </Router>
     </div>

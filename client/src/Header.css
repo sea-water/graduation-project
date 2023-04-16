@@ -1,22 +1,9 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .top_banner {
   background-color: white;
 }
 
 div {
   font-family: oneFont;
-}
-
-.container_text {
-  float: right;
-  font-size: x-large;
-  font-family: "oneFontTitle";
 }
 
 .banner {
@@ -76,6 +63,29 @@ a:active {
 }
 
 .gym {
+  float: left;
   width: 30rem;
   height: 300px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 30px;
+  /* display: inline-block; */
+  clear: both;
+}
+
+.container_text {
+  margin-top: 100px;
+  font-size: x-large;
+  font-family: "oneFontTitle";
+}
+
+.banner_logo {
+  width: 40rem;
+  margin-top: 30px;
+}
+
+.banner_all {
+  width: 80%;
+  height: 25rem;
+  margin: 100px;
 }
