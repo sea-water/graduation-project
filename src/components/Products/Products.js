@@ -1,9 +1,10 @@
 import './Products.css';
  import React from "react";
- import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- import { faBars } from "@fortawesome/free-solid-svg-icons";
- import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
- import {faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+ 
+ import {FiSearch} from "react-icons/fi";
+ import {FiMenu} from "react-icons/fi";
+ import { AiFillShopping} from "react-icons/ai";
+
  import logo from '../img/logo.png';
 
 import {useState} from "react";
@@ -61,10 +62,10 @@ const toggle =()=>{
         </div>
 
           <div className="s_input">
-          <input placeholder="원하시는 상품을 검색해 보세요"/> <button> <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" /> </button>   
+          <input placeholder="원하시는 상품을 검색해 보세요"/> <button><FiSearch size="22"/></button>   
           </div>  
           <div className="s_login">  
-          <Link to ="/Cart"  style={{ textDecoration: "none" ,color:"black"}}><FontAwesomeIcon icon={faBasketShopping} size="2x"/></Link>
+          <Link to ="/Cart"  style={{ textDecoration: "none" ,color:"black"}}><AiFillShopping size="33"/></Link>
           <Link to="/Login" style={{ textDecoration: "none" ,color:"black"}}><div>LOGIN</div></Link>
           <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div>SIGN UP</div></Link>
           
@@ -74,7 +75,8 @@ const toggle =()=>{
 
     <aside className="aside_menu">
       <div className="s_logo2">
-    <FontAwesomeIcon  icon={faBars} size="2x" onClick={()=>toggle()}/>  
+   
+    <FiMenu onClick={()=>toggle()} size="35"/>
     </div>
     <ul className={isO ? "s":"h"}>
             <Link to ="/Community" style={{ textDecoration: "none" ,color:"black"}}><li className="s1">커뮤니티</li></Link>

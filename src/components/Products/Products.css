@@ -110,7 +110,7 @@ justify-content: flex-end;
       }
 
       .s1{
-      
+        font-family: "oneFontTitle";
         color:#ffff;
         font-size: 23px;
         margin-bottom: 8px;
@@ -132,7 +132,7 @@ justify-content: flex-end;
    
     }
     .main_main{
-      
+      font-family: "oneFontTitle";
       color:#ffff;
       font-size: 25px;
       margin-top: 0px;
@@ -151,6 +151,7 @@ justify-content: flex-end;
 
 
     .main_man{
+      font-family: "oneFontTitle";
       background-color: #B98EFF;
       margin-top: 0px;
       color:#ffff;
@@ -204,6 +205,7 @@ justify-content: flex-end;
     
     
     .main_woman{
+      font-family: "oneFontTitle";
       background-color: #B98EFF;
       margin-top: 0px;
       color:#ffff;
@@ -255,6 +257,7 @@ justify-content: flex-end;
       }
     
       .main_aids{
+        font-family: "oneFontTitle";
         background-color: #B98EFF;
         margin-top: 0px;
         color:#ffff;
@@ -301,6 +304,7 @@ justify-content: flex-end;
 
         
     .main_gym{
+      font-family: "oneFontTitle";
       background-color: #B98EFF;
       margin-top: 0px;
       color:#ffff;

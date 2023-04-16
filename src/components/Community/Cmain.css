@@ -3,7 +3,7 @@
     height:760px;
  display:flex;
  justify-content: center;   
- background-image: url("https://img.freepik.com/free-photo/strong-shirtles…dark-background_613910-21292.jpg?size=626&ext=jpg");
+ background-image: url("../img/cmback.jpg");
  background-size: cover;
  background-attachment: fixed;
  overflow:scroll;

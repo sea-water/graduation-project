@@ -30,14 +30,3 @@ export default function App() {
 }
         
 
-/* <Link to="/">
-          <div className="banner">
-            <img
-              className="bannerLogo"
-              src="https://cdn-icons-png.flaticon.com/512/4729/4729230.png"
-              width="50px"
-              height="50px"
-              alt="logo"
-            />
-          </div>
-        </Link>  */

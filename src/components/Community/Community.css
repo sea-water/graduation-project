@@ -34,6 +34,10 @@ justify-content: space-around;
     height:100%;
     width:700px;
 }
+.c_center1{
+    font-size: 30;
+    font-family: "oneFontTitle";
+}
 .c_input{
     border-top: none;
     border-left: none;
