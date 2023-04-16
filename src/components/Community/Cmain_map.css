@@ -18,6 +18,7 @@
    background-image:linear-gradient(#B98EFF,white);
 }
 .crud_first>h3{
+    
     font-size: small;
     font-family: 'Noto Sans KR', sans-serif;
     display:flex;
@@ -41,6 +42,6 @@
     margin-top: 10px;
 }
 .crud_list{
-   
+    font-family: "oneFontTitle";
     font-size: small;
 }
