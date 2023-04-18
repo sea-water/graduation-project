@@ -14,6 +14,7 @@
   background-color: #FFFF;
   }
  .advertisement>h1{
+  font-family: "oneFontTitle";
   margin:20px;
   
  }
@@ -91,4 +92,8 @@ box-sizing: border-box;
   background-attachment: fixed;
   background-size: cover;
  background-image: url("../img/showingpage.png");
+}
+.prototype>h1{
+  font-family: "oneFontTitle";
+
 }

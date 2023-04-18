@@ -66,8 +66,8 @@ const toggle =()=>{
           </div>  
           <div className="s_login">  
           <Link to ="/Cart"  style={{ textDecoration: "none" ,color:"black"}}><AiFillShopping size="33"/></Link>
-          <Link to="/Login" style={{ textDecoration: "none" ,color:"black"}}><div>LOGIN</div></Link>
-          <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div>SIGN UP</div></Link>
+          <Link to="/Login" style={{ textDecoration: "none" ,color:"black"}}><div className="s_log">LOGIN</div></Link>
+          <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div className="s_log">SIGN UP</div></Link>
           
           </div>
           </div>
@@ -75,7 +75,6 @@ const toggle =()=>{
 
     <aside className="aside_menu">
       <div className="s_logo2">
-   
     <FiMenu onClick={()=>toggle()} size="35"/>
     </div>
     <ul className={isO ? "s":"h"}>
@@ -87,29 +86,29 @@ const toggle =()=>{
             <h3 className="main_man" onClick={()=>toggleMenu()}>남성의류</h3>
             <ul className={isOpen ? "show-menu":"hide-menu"}>
             <Link to ="manentire" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">전체</li></Link>
-            <Link to ="mantop" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu2">상의</li></Link>
-            <Link to ="manpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu3">하의</li></Link>
-            <Link to ="manouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu4">아우터</li></Link>
-            <Link to ="manset" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu5">세트</li></Link>
+            <Link to ="mantop" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">상의</li></Link>
+            <Link to ="manpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">하의</li></Link>
+            <Link to ="manouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">아우터</li></Link>
+            <Link to ="manset" style={{ textDecoration: "none" ,color:"black"}}><li className="show-menu1">세트</li></Link>
             </ul>
             </div>
             <div><h3 className="main_woman" onClick={()=>toggleMen()}>여성의류</h3>
             <ul className={isOpe?"show":"hide"}>
             <Link to ="wentire" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">전체</li></Link>
-            <Link to ="wleggings" style={{ textDecoration: "none" ,color:"black"}}><li className="show2">레깅스</li></Link>
-            <Link to ="wjogger" style={{ textDecoration: "none" ,color:"black"}}><li className="show3">조거팬츠</li></Link>
-            <Link to ="wouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show4">아우터</li></Link>
-            <Link to ="wpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show5">하의</li></Link>
-            <Link to ="wtops" style={{ textDecoration: "none" ,color:"black"}}><li className="show6">상의</li></Link>
+            <Link to ="wleggings" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">레깅스</li></Link>
+            <Link to ="wjogger" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">조거팬츠</li></Link>
+            <Link to ="wouter" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">아우터</li></Link>
+            <Link to ="wpants" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">하의</li></Link>
+            <Link to ="wtops" style={{ textDecoration: "none" ,color:"black"}}><li className="show1">상의</li></Link>
             
             </ul>
             </div>
             <div><h3 className="main_aids" onClick={()=>toggleMe()}>보조기구</h3>
             <ul className={isOp?"sho":"hid"}>
             <Link to ="Aidsentire" style={{ textDecoration: "none" ,color:"black"}}><li className="sho1">전체</li></Link>
-            <Link to ="Belt" style={{ textDecoration: "none" ,color:"black"}}><li className="sho2">벨트</li></Link>
-            <Link to ="Strap" style={{ textDecoration: "none" ,color:"black"}}><li className="sho3">스트랩</li></Link>
-            <Link to ="Mat" style={{ textDecoration: "none" ,color:"black"}}><li className="sho4">매트</li></Link>
+            <Link to ="Belt" style={{ textDecoration: "none" ,color:"black"}}><li className="sho1">벨트</li></Link>
+            <Link to ="Strap" style={{ textDecoration: "none" ,color:"black"}}><li className="sho1">스트랩</li></Link>
+            <Link to ="Mat" style={{ textDecoration: "none" ,color:"black"}}><li className="sho1">매트</li></Link>
         
             
             </ul>

@@ -11,7 +11,7 @@
 
 .top_banner {
   background-color: white;
-  height:800px;
+  height:750px;
   overflow-y: scroll;
   overflow-y: auto;
 }
@@ -37,10 +37,12 @@ div {
   margin: 3px;
   /* font-weight: bold; */
 }
-
+.bannerBtn>span{
+  font-family: "oneFontTitle";
+}
 .bannerTitle {
   font-style: none;
-  font-family: oneFont;
+  font-family: "oneFontTitle";
 }
 
 .mid_banner {

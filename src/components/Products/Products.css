@@ -131,6 +131,10 @@ justify-content: flex-end;
     position:fixed;
    
     }
+    .s_log{
+      font-family: "oneFontTitle";
+    }
+   
     .main_main{
       font-family: "oneFontTitle";
       color:#ffff;
@@ -166,6 +170,7 @@ justify-content: flex-end;
 
     li{
       list-style: none;
+      font-family: "oneFont";
     }
     .show-menu{
       background-color: #ffff;
@@ -179,18 +184,7 @@ justify-content: flex-end;
       .show-menu1:hover{
         background-color: #e5c7fb;
       }
-      .show-menu2:hover{
-        background-color: #e5c7fb;
-      }
-      .show-menu3:hover{
-        background-color: #e5c7fb;
-      }
-      .show-menu4:hover{
-        background-color: #e5c7fb;
-      }
-      .show-menu5:hover{
-        background-color: #e5c7fb;
-      }
+     
       
       .hide-menu{
         padding:0;
@@ -228,23 +222,8 @@ justify-content: flex-end;
       }
       .show1:hover{
         background-color: #e5c7fb;
-       
       }
-      .show2:hover{
-        background-color: #e5c7fb;
-      }
-      .show3:hover{
-        background-color: #e5c7fb;
-      }
-      .show4:hover{
-        background-color: #e5c7fb;
-      }
-      .show5:hover{
-        background-color: #e5c7fb;
-      }
-      .show6:hover{
-        background-color: #e5c7fb;
-      }
+     
       .hide{
         opacity: 0;
         padding:0;
@@ -279,17 +258,8 @@ justify-content: flex-end;
         }
         .sho1:hover{
           background-color: #e5c7fb;
-         
         }
-        .sho2:hover{
-          background-color: #e5c7fb;
-        }
-        .sho3:hover{
-          background-color: #e5c7fb;
-        }
-        .sho4:hover{
-          background-color: #e5c7fb;
-        }
+     
       
         .hid{
           opacity: 0;
@@ -317,26 +287,7 @@ justify-content: flex-end;
       background-color: white;
       border:0px;
     }
-    .show_3{
-      background-color: #ffff;
-      padding-left:20px;
-      margin:0;
-      width: 90%;
-      height: 170px;
-      position: relative;
-      left: 0px;
-      transition: 0.1s;
-      }
-      
-      .hide_3{
-        padding:0;
-      margin:0;
-      width: 100%;
-      height: 0px;
-      position: relative;
-      left: -150px;
-      transition: 0.1s;
-      }
+  
     
     .aside_menu>div>div{
       margin:5px;
