@@ -1,10 +1,11 @@
 .TodoList {
   padding: 0;
 }
+
 .TodoList li {
   background: rgb(240, 242, 245);
   padding: 15px 30px;
-  color: rgb(95, 36, 95);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   list-style: none;
 }
@@ -24,6 +25,7 @@
   color: rgb(199, 197, 197);
   text-decoration: line-through rgb(159, 127, 231);
 }
+
 .TodoList li button {
   float: right;
   border: none;

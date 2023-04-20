@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { FiLogIn } from "react-icons/fi";
-import { BsFillPersonPlusFill, BsFillPersonFill } from "react-icons/bs";
+import { BsFillPersonPlusFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
 import logo from "./img/logo.png";
@@ -53,7 +53,6 @@ export default function Header() {
           style={{ textDecoration: "none", color: "black" }}
           href="/TodoList"
         >
-          <BsFillPersonFill color="gray" />
           <span className="bannerTitle"> TO DO LIST</span>
         </a>
 

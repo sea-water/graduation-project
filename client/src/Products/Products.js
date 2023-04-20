@@ -1,9 +1,8 @@
 import "./Products.css";
 import React from "react";
-//  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//  import { faBars } from "@fortawesome/free-solid-svg-icons";
-//  import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
-//  import {faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FiSearch } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
+import { AiFillShopping } from "react-icons/ai";
 import logo from "../img/logo.png";
 
 import { useState } from "react";
@@ -60,13 +59,12 @@ function Products() {
           <div className="s_input">
             <input placeholder="원하시는 상품을 검색해 보세요" />{" "}
             <button>
-              {" "}
-              {/* <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />{" "} */}
+              <FiSearch size="22" />
             </button>
           </div>
           <div className="s_login">
             <Link to="/Cart" style={{ textDecoration: "none", color: "black" }}>
-              {/* <FontAwesomeIcon icon={faBasketShopping} size="2x" /> */}
+              <AiFillShopping size="33" />
             </Link>
             <Link
               to="/Login"
@@ -86,7 +84,7 @@ function Products() {
 
       <aside className="aside_menu">
         <div className="s_logo2">
-          {/* <FontAwesomeIcon icon={faBars} size="2x" onClick={() => toggle()} /> */}
+          <FiMenu onClick={() => toggle()} size="35" />
         </div>
         <ul className={isO ? "s" : "h"}>
           <Link

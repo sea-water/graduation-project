@@ -4,6 +4,9 @@ import TodoList from "./TodoList";
 import "./Todos.css";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
+import Calendar from "react-calendar";
+import moment from "moment";
+import "react-calendar/dist/Calendar.css";
 
 const Todos = () => {
   const no = useRef(1);
@@ -37,6 +40,8 @@ const Todos = () => {
     );
   };
 
+  const [value, onChange] = useState(new Date());
+
   return (
     <div>
       <Link to="/">
@@ -50,10 +55,22 @@ const Todos = () => {
           />
         </div>
       </Link>
-      <div className="Todos">
-        <h1>Todo List</h1>
-        <TodoInput onAdd={onAdd} />
-        <TodoList todos={todos} onDel={onDel} onToggle={onToggle} />
+      {/* <div className="calendar-parent">
+        월간 운동 기록
+        <div className="calendar">
+          <Calendar onChange={onChange} value={value} />
+        </div>
+      </div> */}
+
+      <div>
+        <span className="tab">월간 운동 횟수</span>
+        <span className="tab"> 체지방률 변화 </span>
+        <span className="tab"> 월간 상태 </span>
+        <div className="Todos">
+          <h1>Todo List</h1>
+          <TodoInput onAdd={onAdd} />
+          <TodoList todos={todos} onDel={onDel} onToggle={onToggle} />
+        </div>
       </div>
     </div>
   );
