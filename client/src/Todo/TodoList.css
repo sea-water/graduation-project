@@ -3,7 +3,7 @@
 }
 
 .TodoList li {
-  background: rgb(240, 242, 245);
+  background: white;
   padding: 15px 30px;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -16,13 +16,13 @@
 }
 
 .TodoList li.on span {
-  color: rgb(199, 197, 197);
+  color: white;
 }
 .TodoList li em {
   cursor: pointer;
 }
 .TodoList li.on em {
-  color: rgb(199, 197, 197);
+  color: white;
   text-decoration: line-through rgb(159, 127, 231);
 }
 

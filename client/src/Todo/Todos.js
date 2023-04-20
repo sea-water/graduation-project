@@ -62,12 +62,12 @@ const Todos = () => {
         </div>
       </div> */}
 
-      <div>
+      <div className="todo_leftSide">
         <span className="tab">월간 운동 횟수</span>
         <span className="tab"> 체지방률 변화 </span>
         <span className="tab"> 월간 상태 </span>
         <div className="Todos">
-          <h1>Todo List</h1>
+          <h1>TODO LIST</h1>
           <TodoInput onAdd={onAdd} />
           <TodoList todos={todos} onDel={onDel} onToggle={onToggle} />
         </div>
