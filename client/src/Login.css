@@ -130,7 +130,3 @@ input[type="submit"]:hover {
 .banner {
   justify-content: flex-start;
 }
-
-.center {
-  background-color: #fffbd4;
-}

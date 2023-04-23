@@ -12,6 +12,31 @@ div {
   top: 0;
   z-index: 100;
   background-color: white;
+  height: 60px;
+}
+
+.bannerBtns_left {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerBtns_right {
+  padding: 20px;
+  padding-left: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bannerBtns_right {
+    padding: 20px;
+    padding-left: 35%;
+  }
 }
 
 .bannerBtn {
@@ -21,11 +46,11 @@ div {
 .bannerTitle {
   font-style: none;
   font-family: oneFont;
+  font-size: 14px;
 }
 
 .mid_banner {
   width: 100%;
-  margin-top: 100px;
 }
 
 a {
@@ -52,8 +77,8 @@ a:active {
 }
 
 .bannerLogo {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .gym {
@@ -64,6 +89,9 @@ a:active {
   margin-left: 10%;
   margin-right: 30px;
   clear: both;
+}
+.about_hl {
+  width: 100%;
 }
 
 .container_text {
@@ -95,8 +123,20 @@ a:active {
   margin-top: 30px;
 }
 
-.banner_all {
-  width: 80%;
-  height: 25rem;
-  margin: 100px;
+.logo_meaning {
+  width: 40%;
+  margin-top: 80px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+
+.logo_meaning2 {
+  width: 40%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
 }

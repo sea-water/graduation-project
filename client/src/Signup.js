@@ -28,6 +28,14 @@ export default function Signup() {
             <input type="password" required />
             <label>Password</label>
           </div>
+          <div className="txt_field">
+            <input type="text" required />
+            <label>Email</label>
+          </div>
+          <div className="txt_field">
+            <input type="text" required />
+            <label>Address</label>
+          </div>
           <input type="submit" value="Sign up" />
         </form>
       </div>

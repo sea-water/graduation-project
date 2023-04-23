@@ -6,17 +6,12 @@ import { Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
 import logo from "./img/logo.png";
 import ImageSlider from "./ImageSlide";
-import gym from "./img/gym.jpg";
 import midBanner from "./img/banner.jpeg";
-import banner_logo from "./img/banner_logo.jpeg";
-import banner_all from "./img/banner_all.jpeg";
+import about_hl from "./img/about_hl.png";
+import logo_meaning from "./img/logo_meaning.jpeg";
+import logo_meaning2 from "./img/logo_meaning2.jpeg";
 
 export default function Header() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpen = () => {
-    setOpen(!open);
-  };
   return (
     <div className="top_banner">
       <span className="banner">
@@ -31,62 +26,61 @@ export default function Header() {
             />
           </div>
         </Link>
+        <div className="bannerBtns_left">
+          <a
+            className="bannerBtn"
+            href="/Products"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <span className="bannerTitle"> PRODUCTS</span>
+          </a>
 
-        <a
-          className="bannerBtn"
-          href="/Products"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <span> PRODUCTS</span>
-        </a>
+          <a
+            className="bannerBtn"
+            href="/Community"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <span className="bannerTitle"> COMMUNITY</span>
+          </a>
+          <a
+            className="bannerBtn"
+            style={{ textDecoration: "none", color: "black" }}
+            href="/TodoList"
+          >
+            <span className="bannerTitle"> TO DO LIST</span>
+          </a>
+        </div>
+        <div className="bannerBtns_right">
+          <a
+            className="bannerBtn"
+            href="/Login"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <FiLogIn color="gray" />
+            <span className="bannerTitle"> LOGIN</span>
+          </a>
 
-        <a
-          className="bannerBtn"
-          href="/Community"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <span className="bannerTitle"> COMMUNITY</span>
-        </a>
-        <a
-          className="bannerBtn"
-          onClick={handleOpen}
-          style={{ textDecoration: "none", color: "black" }}
-          href="/TodoList"
-        >
-          <span className="bannerTitle"> TO DO LIST</span>
-        </a>
-
-        <a
-          className="bannerBtn"
-          href="/Login"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <FiLogIn color="gray" />
-          <span className="bannerTitle"> LOGIN</span>
-        </a>
-
-        <a
-          className="bannerBtn"
-          href="/Signup"
-          style={{ textDecoration: "none", color: "black" }}
-        >
-          <BsFillPersonPlusFill color="gray" />
-          <span className="bannerTitle"> SIGN UP</span>
-        </a>
+          <a
+            className="bannerBtn"
+            href="/Signup"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <BsFillPersonPlusFill color="gray" />
+            <span className="bannerTitle"> SIGN UP</span>
+          </a>
+        </div>
       </span>
       <ImageSlider />
-      {/* <div className="container"> */}
-      <img className="gym" src={gym} alt="gym" />
-      <div className="container_text">헬린이 쇼핑몰이란</div>
-      <div className="container_main">
-        운동을 이제 막 시작한 사람을 일컫는 말로, 헬린이들을 위한 쇼핑몰입니다.
-        <br />
-        투두리스트부터 운동기록까지 쇼핑몰 뿐 아니라 다양한 기능으로 헬린이들의
-        운동을 응원합니다.
-      </div>
-      <img className="banner_logo" src={banner_logo} alt="banner_logo" />
+      <img className="about_hl" src={about_hl} alt="about_hl" />
       <img className="mid_banner" src={midBanner} alt="mid_banner" />
-      <img className="banner_all" src={banner_all} alt="banner_all" />
+      <div className="logos">
+        <img className="logo_meaning" src={logo_meaning} alt="logo_meaning" />
+        <img
+          className="logo_meaning2"
+          src={logo_meaning2}
+          alt="logo_meaning2"
+        />
+      </div>
     </div>
   );
 }
