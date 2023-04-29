@@ -12,17 +12,23 @@
    background-image:linear-gradient(#B98EFF,white);
       
 }
+
+    .rap_main:hover{
+        transform: scale(1.1);
+        transition-duration: .5s;
+      }
+
 .rap_main_name{
     font-family: "oneFontTitle";
     height:10%;
     display:flex;
     width:100%;
-    justify-content: center;
+    
 }
 .rap_main_img{
     margin:15px;
     border-radius: 5px;
-    height:50%;
+    height:65%;
     width:100%;
     display:flex;
     background-color: azure;

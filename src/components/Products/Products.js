@@ -2,7 +2,7 @@ import './Products.css';
  import React from "react";
  
  import {FiSearch} from "react-icons/fi";
- import {FiMenu} from "react-icons/fi";
+
  import { AiFillShopping} from "react-icons/ai";
 
  import logo from '../img/logo.png';
@@ -35,7 +35,7 @@ import Mat from './Mat';
   const [isOpen,setMenu]=useState(false);
   const[isOpe,setMen]=useState(false);
   const[isOp,setMe]=useState(false);
-  const[isO,set]=useState(false);
+ 
 const toggleMenu =()=>{
   setMenu(isOpen=>!isOpen);
 };
@@ -46,16 +46,13 @@ const toggleMe =()=>{
   setMe(isOp=>!isOp);
 };
 
-const toggle =()=>{
-  set(isO=>!isO);
-};
+
   return (
        <div className="Products">
         <div className="Sheader1">
     <div className="Sheader">
    
         <div className="s_logo"> 
-           
         <Link to="/">
          <img src={logo} alt="logo"/>
          </Link> 
@@ -74,13 +71,6 @@ const toggle =()=>{
           </div>
 
     <aside className="aside_menu">
-      <div className="s_logo2">
-    <FiMenu onClick={()=>toggle()} size="35"/>
-    </div>
-    <ul className={isO ? "s":"h"}>
-            <Link to ="/Community" style={{ textDecoration: "none" ,color:"black"}}><li className="s1">커뮤니티</li></Link>
-            <Link to ="/Todolist" style={{ textDecoration: "none" ,color:"black"}}><li className="s1">투두리스트</li></Link></ul>
-    
     <Link to="/Products" style={{ textDecoration: "none" }}><h1 className="main_main">메인으로</h1></Link>
             <div>
             <h3 className="main_man" onClick={()=>toggleMenu()}>남성의류</h3>

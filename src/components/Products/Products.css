@@ -29,16 +29,17 @@ align-items: center;
 width:100%;
 position:fixed;
 display:flex;
-height: 100px;
+height: 60px;
 align-items: flex-end;
 justify-content: flex-end;
 }
 .Sheader{
+  padding-left: 30px;
   box-sizing: border-box;
     display:flex;
       background-color: white;
-      height:100px;
-      width:85%;
+      height:60px;
+      width:100%;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
@@ -73,7 +74,7 @@ justify-content: flex-end;
       display:flex;
       justify-content: space-between;
       
-    height:100px;
+    height:60px;
     
     }
     .s_login{
@@ -83,13 +84,7 @@ justify-content: flex-end;
       width:20%;
       justify-content: space-around;
     }
-    .s_logo2{
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      height:100px;
-     
-    }
+   
     .s{
       background-color: #ffff;
       padding:0;
@@ -123,7 +118,7 @@ justify-content: flex-end;
       }
 
     .aside_menu{
-   
+   top:60px;
     width:15%;
     height:1400px;
     background-color: white;
@@ -131,7 +126,7 @@ justify-content: flex-end;
     position:fixed;
    
     }
-    .s_log{
+    .s_logo{
       font-family: "oneFontTitle";
     }
    
