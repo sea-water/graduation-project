@@ -4,7 +4,7 @@ import { FiLogIn } from "react-icons/fi";
 import { BsFillPersonPlusFill, BsFillPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
-import logo from "./img/logo.png";
+import logo from "./img/mainlogo.jpg";
 import ImageSlider from "./ImageSlide";
 import gym from "./img/gym.jpg";
 import midBanner from "./img/banner.jpeg";

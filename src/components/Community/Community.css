@@ -8,7 +8,7 @@
     height:60px;
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding:0;
     margin:0;
 }
@@ -23,7 +23,7 @@
     }
 
 .c_left{
-    width:60px;
+   
     height:60px;
     display:flex;
     align-items: center;
@@ -32,7 +32,7 @@
 }
 .c_logo{
 
-    width:60px;
+   
     height:60px;
 }
 

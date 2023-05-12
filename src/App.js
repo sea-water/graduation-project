@@ -10,7 +10,7 @@ import Signup from "./components/Signup";
 import MyCalendar from "./components/Mypage/MyCalendar";
 import TodoList from "./components/Mypage/Todos";
 import Cart from "./components/Cart";
-
+import Home from "./components/MyHome/Home";
 export default function App() {
   return (
     <Router>
@@ -24,6 +24,7 @@ export default function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/TodoList" element={<TodoList />} />
           <Route path="/MyCalendar" element={<MyCalendar />} />
+          <Route path="/Home" element={<Home />} />
         </Routes>
     </Router>
   );

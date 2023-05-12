@@ -19,7 +19,7 @@
     height:100%;
     width:100%;
     background-size: cover;
-    background-image:url(../img/coad.jpg);
+    background-image:url(../img/ad_3.jpg);
 }
 .cmain_main{
  
@@ -42,16 +42,21 @@
 .cmain_bt{
     
     box-shadow: 2px 2px 2px 2px gray;
-   
-    background-color:#B98EFF;
+    background-color:#FFFF;
+    color:#B98EFF;
     border:none;
     border-radius: 5px;
     display:flex;
-   color:#FFFF;
+    font-family: "oneFontTitle";
+    font-size: small;
     height:30px;
     width:70px;
     align-items: center;
     justify-content: center;
+}
+.cmain_bt:hover{
+    transition-duration: .5s;
+    background-color:#7e2eff;
 }
 .crud_map{
     display:flex;

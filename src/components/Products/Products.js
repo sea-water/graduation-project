@@ -5,7 +5,7 @@ import './Products.css';
 
  import { AiFillShopping} from "react-icons/ai";
 
- import logo from '../img/logo.png';
+ import logo from '../img/mainlogo.jpg';
 
 import {useState} from "react";
 import {Link} from 'react-router-dom';
