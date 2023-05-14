@@ -31,7 +31,7 @@ export default function Login() {
           <div className="pass">Forgot password?</div>
           <input type="submit" value="Login" />
           <div className="signup_link">
-            Not a member? <a href="#">Signup</a>
+            Not a member? <a href="/Signup">Signup</a>
           </div>
         </form>
       </div>

@@ -3,7 +3,7 @@
   height: 760px;
   display: flex;
   justify-content: center;
-  background-image: url("../img/cmback.jpg");
+  background-image: url("../img/cmbg.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow: scroll;
@@ -18,7 +18,7 @@
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-image: url(../img/coad.jpg);
+  background-image: url(../img/ad_3.jpg);
 }
 .cmain_main {
   width: 70%;
@@ -36,16 +36,21 @@
 
 .cmain_bt {
   box-shadow: 2px 2px 2px 2px gray;
-
-  background-color: #b98eff;
+  background-color: #ffff;
+  color: #b98eff;
   border: none;
   border-radius: 5px;
   display: flex;
-  color: #ffff;
+  font-family: "oneFontTitle";
+  font-size: small;
   height: 30px;
   width: 70px;
   align-items: center;
   justify-content: center;
+}
+.cmain_bt:hover {
+  transition-duration: 0.5s;
+  background-color: #7e2eff;
 }
 .crud_map {
   display: flex;

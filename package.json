@@ -3,7 +3,9 @@
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-calendar": "^4.2.1",
+    "react-intersection-observer": "^9.4.3",
     "react-router": "^6.10.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "react-scroll-motion": "^0.3.2"
   }
 }

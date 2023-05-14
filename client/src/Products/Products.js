@@ -1,9 +1,11 @@
 import "./Products.css";
 import React from "react";
+
 import { FiSearch } from "react-icons/fi";
-import { FiMenu } from "react-icons/fi";
+
 import { AiFillShopping } from "react-icons/ai";
-import logo from "../img/logo.png";
+
+import logo from "../img/main_logo.jpg";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -32,7 +34,7 @@ function Products() {
   const [isOpen, setMenu] = useState(false);
   const [isOpe, setMen] = useState(false);
   const [isOp, setMe] = useState(false);
-  const [isO, set] = useState(false);
+
   const toggleMenu = () => {
     setMenu((isOpen) => !isOpen);
   };
@@ -43,9 +45,6 @@ function Products() {
     setMe((isOp) => !isOp);
   };
 
-  const toggle = () => {
-    set((isO) => !isO);
-  };
   return (
     <div className="Products">
       <div className="Sheader1">
@@ -70,37 +69,19 @@ function Products() {
               to="/Login"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <div>LOGIN</div>
+              <div className="s_log">LOGIN</div>
             </Link>
             <Link
               to="/Signup"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <div>SIGN UP</div>
+              <div className="s_log">SIGN UP</div>
             </Link>
           </div>
         </div>
       </div>
 
       <aside className="aside_menu">
-        <div className="s_logo2">
-          <FiMenu onClick={() => toggle()} size="35" />
-        </div>
-        <ul className={isO ? "s" : "h"}>
-          <Link
-            to="/Community"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <li className="s1">커뮤니티</li>
-          </Link>
-          <Link
-            to="/Todolist"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <li className="s1">투두리스트</li>
-          </Link>
-        </ul>
-
         <Link to="/Products" style={{ textDecoration: "none" }}>
           <h1 className="main_main">메인으로</h1>
         </Link>
@@ -119,25 +100,25 @@ function Products() {
               to="mantop"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show-menu2">상의</li>
+              <li className="show-menu1">상의</li>
             </Link>
             <Link
               to="manpants"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show-menu3">하의</li>
+              <li className="show-menu1">하의</li>
             </Link>
             <Link
               to="manouter"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show-menu4">아우터</li>
+              <li className="show-menu1">아우터</li>
             </Link>
             <Link
               to="manset"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show-menu5">세트</li>
+              <li className="show-menu1">세트</li>
             </Link>
           </ul>
         </div>
@@ -156,28 +137,28 @@ function Products() {
               to="wleggings"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show2">레깅스</li>
+              <li className="show1">레깅스</li>
             </Link>
             <Link
               to="wjogger"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show3">조거팬츠</li>
+              <li className="show1">조거팬츠</li>
             </Link>
             <Link
               to="wouter"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show4">아우터</li>
+              <li className="show1">아우터</li>
             </Link>
             <Link
               to="wpants"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <li className="show5">하의</li>
+              <li className="show1">하의</li>
             </Link>
             <Link to="wtops" style={{ textDecoration: "none", color: "black" }}>
-              <li className="show6">상의</li>
+              <li className="show1">상의</li>
             </Link>
           </ul>
         </div>
@@ -193,13 +174,13 @@ function Products() {
               <li className="sho1">전체</li>
             </Link>
             <Link to="Belt" style={{ textDecoration: "none", color: "black" }}>
-              <li className="sho2">벨트</li>
+              <li className="sho1">벨트</li>
             </Link>
             <Link to="Strap" style={{ textDecoration: "none", color: "black" }}>
-              <li className="sho3">스트랩</li>
+              <li className="sho1">스트랩</li>
             </Link>
             <Link to="Mat" style={{ textDecoration: "none", color: "black" }}>
-              <li className="sho4">매트</li>
+              <li className="sho1">매트</li>
             </Link>
           </ul>
         </div>

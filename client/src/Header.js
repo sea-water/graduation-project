@@ -1,29 +1,22 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./Header.css";
 import { FiLogIn } from "react-icons/fi";
 import { BsFillPersonPlusFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import "react-slideshow-image/dist/styles.css";
-import logo from "./img/logo.png";
+import logo from "./img/main_logo.jpg";
 import ImageSlider from "./ImageSlide";
 import midBanner from "./img/banner.jpeg";
 import about_hl from "./img/about_hl.png";
-import logo_meaning from "./img/logo_meaning.jpeg";
-import logo_meaning2 from "./img/logo_meaning2.jpeg";
+import logo_mean_left from "./img/logo_mean_left.jpeg";
+import logo_mean_right from "./img/logo_mean_right.jpeg";
 
-export default function Header() {
+const Header = () => {
   return (
     <div className="top_banner">
       <span className="banner">
         <Link to="/">
           <div>
-            <img
-              className="bannerLogo"
-              src={logo}
-              width="50px"
-              height="50px"
-              alt="logo"
-            />
+            <img className="bannerLogo" src={logo} alt="logo" />
           </div>
         </Link>
         <div className="bannerBtns_left">
@@ -44,8 +37,8 @@ export default function Header() {
           </a>
           <a
             className="bannerBtn"
+            href="/Todo/Todos"
             style={{ textDecoration: "none", color: "black" }}
-            href="/TodoList"
           >
             <span className="bannerTitle"> TO DO LIST</span>
           </a>
@@ -74,13 +67,19 @@ export default function Header() {
       <img className="about_hl" src={about_hl} alt="about_hl" />
       <img className="mid_banner" src={midBanner} alt="mid_banner" />
       <div className="logos">
-        <img className="logo_meaning" src={logo_meaning} alt="logo_meaning" />
         <img
-          className="logo_meaning2"
-          src={logo_meaning2}
+          className="logo_mean_left"
+          src={logo_mean_left}
+          alt="logo_meaning"
+        />
+        <img
+          className="logo_mean_right"
+          src={logo_mean_right}
           alt="logo_meaning2"
         />
       </div>
     </div>
   );
-}
+};
+
+export default Header;

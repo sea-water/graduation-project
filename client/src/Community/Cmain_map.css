@@ -4,42 +4,60 @@
 .crud_main {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("../img/showingpage.png");
+  background-color: #ffff;
 }
 .crud_first {
   box-shadow: 5px 5px 5px 5px gray;
   box-sizing: border-box;
   border-radius: 30px;
-  height: 270px;
+  height: 45%;
   margin: 25px;
-  width: 20%;
+  min-width: 20%;
   border: none;
-  background-image: linear-gradient(#b98eff, white);
+  background-color: #ffff;
+}
+.crud_first:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 .crud_first > h3 {
-  font-size: small;
-  font-family: "Noto Sans KR", sans-serif;
+  color: #b98eff;
+  font-family: "oneFontTitle";
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-family: "oneFontTitle";
 }
-.crud_first > img {
+.crud_img > img {
   height: 90px;
   width: 120px;
+}
+.crud_img {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .crud_button {
   display: flex;
   justify-content: center;
+  font-family: "oneFontTitle";
 }
 .crud_first > div > button {
   border: none;
-  background-color: #ffff;
+  background-color: #b98eff;
   height: 30px;
-  width: 70%;
+  min-width: 70%;
   border-radius: 8px;
   margin-top: 10px;
 }
+.crud_first > div > button:hover {
+  background-color: #7e2eff;
+  transition-duration: 0.5s;
+}
 .crud_list {
+  color: #b98eff;
+  padding-left: 15px;
+  font-family: "oneFontTitle";
   font-size: small;
 }
