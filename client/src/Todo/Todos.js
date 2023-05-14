@@ -3,7 +3,7 @@ import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 import "./Todos.css";
 import { Link } from "react-router-dom";
-import logo from "../img/logo.png";
+import logo from "../img/main_logo.jpg";
 import Calendar from "react-calendar";
 import moment from "moment";
 import "react-calendar/dist/Calendar.css";
@@ -46,13 +46,7 @@ const Todos = () => {
     <div>
       <Link to="/">
         <div>
-          <img
-            className="bannerLogo"
-            src={logo}
-            width="50px"
-            height="50px"
-            alt="logo"
-          />
+          <img className="bannerLogo" src={logo} alt="logo" />
         </div>
       </Link>
       {/* <div className="calendar-parent">

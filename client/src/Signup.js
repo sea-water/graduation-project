@@ -1,20 +1,14 @@
 import React from "react";
 import "./Signup.css";
 import { Link } from "react-router-dom";
-import logo from "./img/logo.png";
+import logo from "./img/main_logo.jpg";
 
 export default function Signup() {
   return (
     <div>
       <Link to="/">
         <div className="banner">
-          <img
-            className="bannerLogo"
-            src={logo}
-            width="50px"
-            height="50px"
-            alt="logo"
-          />
+          <img className="bannerLogo" src={logo} alt="logo" />
         </div>
       </Link>
       <div className="center">
