@@ -2,78 +2,31 @@
   background-color: white;
 }
 
-div {
-  font-family: oneFont;
-}
-
 .banner {
   display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
+  align-items: center;
   background-color: white;
-  height: 60px;
-}
-
-.bannerBtns_left {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.bannerBtns_right {
-  padding: 20px;
-  padding-left: 67%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 1200px) {
-  .bannerBtns_right {
-    padding: 20px;
-    padding-left: 35%;
-  }
 }
 
 .bannerBtn {
   padding: 20px;
-}
-
-.bannerTitle {
-  font-style: none;
-  font-family: oneFont;
-  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mid_banner {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: rgb(170, 161, 161);
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
+button {
+  background-color: white;
+  border: none;
 }
 
 .bannerLogo {
@@ -84,12 +37,7 @@ a:active {
   width: 100%;
 }
 
-.logo_mean_left {
-  width: 40%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
+.logo_mean_left,
 .logo_mean_right {
   width: 40%;
   margin-top: 50px;
@@ -99,4 +47,40 @@ a:active {
 .logos {
   display: flex;
   justify-content: center;
+}
+
+.banner_btnItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.left-buttons,
+.right-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.logo_mean_left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.logo_mean_right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.logo_mean_left.visible,
+.logo_mean_right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

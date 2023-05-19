@@ -1,11 +1,13 @@
 .cmain_crud {
   height: 730px;
 }
+
 .crud_main {
   display: flex;
   flex-wrap: wrap;
   background-color: #ffff;
 }
+
 .crud_first {
   box-shadow: 5px 5px 5px 5px gray;
   box-sizing: border-box;
@@ -38,11 +40,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .crud_button {
   display: flex;
   justify-content: center;
   font-family: "oneFontTitle";
 }
+
 .crud_first > div > button {
   border: none;
   background-color: #b98eff;
@@ -51,6 +55,7 @@
   border-radius: 8px;
   margin-top: 10px;
 }
+
 .crud_first > div > button:hover {
   background-color: #7e2eff;
   transition-duration: 0.5s;
