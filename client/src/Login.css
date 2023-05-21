@@ -129,3 +129,21 @@ input[type="submit"]:hover {
 .banner {
   justify-content: flex-start;
 }
+
+.bannerBtn {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  align-items: center;
+  background-color: white;
+}

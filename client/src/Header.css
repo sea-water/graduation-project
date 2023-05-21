@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
+.banner_btnItems {
+  font-size: 12px;
+}
+
 .mid_banner {
   width: 100%;
 }

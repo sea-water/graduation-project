@@ -4,6 +4,7 @@ import {
   MdOutlineCheckBox,
   MdOutlineCheckBoxOutlineBlank,
 } from "react-icons/md";
+import "./TodoItem.css";
 
 const TodoItem = ({ todos, onDel, onToggle }) => {
   const { id, text, done } = todos;
@@ -14,9 +15,11 @@ const TodoItem = ({ todos, onDel, onToggle }) => {
         <span onClick={() => onToggle(id)}>
           {done ? <MdOutlineCheckBox /> : <MdOutlineCheckBoxOutlineBlank />}
         </span>
-        <em onClick={() => onToggle(id)}>{text}</em>
+        <span onClick={() => onToggle(id)} className={done ? "completed" : ""}>
+          {text}
+        </span>
         <button onClick={() => onDel(id)}>
-          <FaRegTrashAlt color="rgb(175,169,169)" size="20" />
+          <FaRegTrashAlt />
         </button>
       </li>
     </div>
