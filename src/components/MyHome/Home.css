@@ -1,5 +1,5 @@
 .Home{
-    height:100%;
+    height:890px;
     width:100%;
     background-color: #ffff;
     display:flex;
@@ -7,17 +7,65 @@
     
 }
 .home_main{
-    height:800px;
+   
+    margin-top: 50px;
+    height:100%;
+    width:100%;
     display:flex;
+  
+  
+    justify-content: center; 
+   
 }
+.sds{
+    height:600px;
+    background-color: rgb(164, 209, 248);
+    display:flex;
+    flex-direction: row;
+   
+   border-radius: 15px;
+    }
+.hmm{
+    padding:50px;
+}
+.hml{
+    padding:50px;
+}
+.hml>div{
+    background-color:chartreuse;
+    border-radius: 10px;
+    margin-bottom:100px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    width:500px;
+}
+.setting{
+    border-radius: 20px;
+    background-color: rgb(228, 100, 237);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
 .hmm_id{
+    margin-top: 130px;
+    border-radius: 20px;
     background-color: cornflowerblue;
+    display:flex;
+    align-items: center;
+   
     height:50px;
 }
 .profile{
+    margin:10px;
     border-radius: 50%;
     background-color:bisque;
     height:250px;
     width:250px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
 }

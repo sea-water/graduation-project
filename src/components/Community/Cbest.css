@@ -3,7 +3,7 @@
     height:700px;
  display:flex;
  justify-content: center;   
- background-image: url("../img/cmbg.jpg");
+ background-image: url("../img/backpage.jpg");
  background-size: cover;
  background-attachment: fixed;
  overflow:scroll;
@@ -28,6 +28,16 @@
     flex-direction: column;
 width:100%;
 align-items: center;
+   }
+   .choice{
+      margin-bottom:50px;
+     
+      display:flex;
+     
+   }
+   .choice>select{
+      border-radius: 10px;
+    margin-left: 600px;
    }
    .cbest_input{
     height:8%;

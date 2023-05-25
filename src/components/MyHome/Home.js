@@ -23,12 +23,13 @@ function Home(props) {
           <Link to="/Signup" style={{ textDecoration: "none" ,color:"black"}}><div className="c_log">SIGN UP</div></Link>
     </div>
     </div>
-
+    
     <div className="home_main">
+    <div className="sds">
             <div className="hmm">
             <div className="profile">프로필사진</div>
             <div className="hmm_id">아이디</div>
-            <div>설정</div>
+            <div className="setting">설정</div>
             </div>
             <div className="hml">
             <div>쓴 글</div>
@@ -37,6 +38,8 @@ function Home(props) {
             <div>로그아웃하기</div>
             </div>
         </div>
+        </div>
+
         </div>
     );
 }

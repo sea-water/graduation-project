@@ -3,7 +3,7 @@
     height:760px;
  display:flex;
  justify-content: center;   
- background-image: url("../img/cmbg.jpg");
+ background-image: url("../img/backpage.jpg");
  background-size: cover;
  background-attachment: fixed;
  overflow:scroll;
