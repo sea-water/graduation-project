@@ -31,7 +31,9 @@ import Strap from './Strap';
 import Mat from './Mat';
 
 
+
  function Products(){
+  const [products,setProducts]=useState([]);
   const [isOpen,setMenu]=useState(false);
   const[isOpe,setMen]=useState(false);
   const[isOp,setMe]=useState(false);
@@ -113,7 +115,7 @@ const toggleMe =()=>{
           <Routes>
           
           <Route path="/*" element={<Productsmain/>}></Route>    
-        <Route path="manentire" element={<Productsmanentire/>}></Route>
+        <Route path="/manentire/*" element={<Productsmanentire products={products} setProducts={setProducts}/>}></Route>
         <Route path="mantop" element={<Productsmantop/>}></Route>
         <Route path="manpants" element={<Productsmanpants/>}></Route>
         <Route path="manouter" element={<Productsmanouter/>}></Route>

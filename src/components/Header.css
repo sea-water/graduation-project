@@ -1,107 +1,90 @@
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  height:1000px;
-}
-
-
 .top_banner {
   background-color: white;
-  height:750px;
-  overflow-y: scroll;
-  overflow-y: auto;
-}
-
-div {
-  font-family: oneFont;
 }
 
 .banner {
   display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
+  align-items: center;
   background-color: white;
 }
 
 .bannerBtn {
-  background-color: transparent;
-  border-radius: 5px;
-  border: none;
-  /* width: fit-content; */
   padding: 20px;
-  margin: 3px;
-  /* font-weight: bold; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
-.bannerBtn>span{
-  font-family: "oneFontTitle";
-}
-.bannerTitle {
-  font-style: none;
-  font-family: "oneFontTitle";
+
+.banner_btnItems {
+  font-size: 12px;
 }
 
 .mid_banner {
   width: 100%;
-  margin-top: 100px;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: rgb(170, 161, 161);
-}
-
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
+button {
+  background-color: white;
+  border: none;
 }
 
 .bannerLogo {
   height: 60px;
-  width:120px;
 }
 
-.gym {
-  float: left;
-  width: 30rem;
-  height: 300px;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 30px;
-  /* display: inline-block; */
-  clear: both;
+.about_hl {
+  width: 100%;
 }
 
-.container_text {
-  margin-top: 100px;
-  font-size: x-large;
-  font-family: "oneFontTitle";
+.logo_mean_left,
+.logo_mean_right {
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-.banner_logo {
-  width: 40rem;
-  margin-top: 30px;
+.logos {
+  display: flex;
+  justify-content: center;
 }
 
-.banner_all {
-  width: 80%;
-  height: 25rem;
-  margin: 100px;
+.banner_btnItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.left-buttons,
+.right-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.logo_mean_left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.logo_mean_right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.logo_mean_left.visible,
+.logo_mean_right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

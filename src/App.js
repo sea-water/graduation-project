@@ -11,10 +11,12 @@ import MyCalendar from "./components/Mypage/MyCalendar";
 import TodoList from "./components/Mypage/Todos";
 import Cart from "./components/Cart";
 import Home from "./components/MyHome/Home";
+import Details from './components/Products/Details';
 export default function App() {
   return (
     <Router>
         <Routes>
+        <Route path="/Details" element={<Details/>}/>
           <Route exact path="/" element={<Header />} />
           <Route path="/Products/*" element={<Products/>}/>
           <Route path="/Community/*" element={<Community />} />
