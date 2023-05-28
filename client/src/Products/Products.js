@@ -1,12 +1,8 @@
 import "./Products.css";
 import React from "react";
-
 import { FiSearch } from "react-icons/fi";
-
 import { AiFillShopping } from "react-icons/ai";
-
 import logo from "../img/main_logo.jpg";
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Productsmanentire from "./Productsmanentire";
@@ -16,14 +12,12 @@ import Productsmanouter from "./Productsmanouter";
 import Productsmanset from "./Productsmanset";
 import { Routes, Route } from "react-router-dom";
 import Productsmain from "./Productsmain";
-
 import Wentire from "./Wentire";
 import Wleggings from "./Wleggings";
 import Wjogger from "./Wjogger";
 import Wpants from "./Wpants";
 import Wtop from "./Wtop";
 import Wouter from "./Wouter";
-
 import Aids from "./Aids";
 import Aidsentire from "./Aidsentire";
 import Belt from "./Belt";

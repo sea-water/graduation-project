@@ -98,10 +98,14 @@
 
 /* navigation 부분 */
 .react-calendar__navigation button {
-  /* color: #6f48eb; */
   min-width: 100px;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+button.sundayTile,
+button.saturdayTile {
+  padding-bottom: 1rem;
 }
 
 /* navigation부분 hover했을 때 */
@@ -117,7 +121,7 @@ abbr[title] {
 
 /* 오늘 날짜 */
 .react-calendar__tile--now {
-  background-color: pink;
+  background-color: rgb(255, 205, 213);
 }
 
 .react-calendar__navigation__label > span {
@@ -131,9 +135,14 @@ abbr[title] {
   text-align: center;
 }
 
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #b8b6b6;
+}
+
 /* 각 날짜 부분 */
 .react-calendar__tile {
-  /* border: 0.5px solid rgb(226, 226, 226); */
+  /* test용 색 */
+  border: 0.5px solid #cccccc;
   text-align: center;
 }
 
@@ -143,4 +152,11 @@ abbr[title] {
 
 .react-calendar__tile:enabled:focus {
   background-color: rgb(203, 170, 254);
+}
+
+.react-calendar__month-view__days__day--neighboringMonth
+  .react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
 }

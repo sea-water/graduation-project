@@ -1,6 +1,6 @@
 import React from "react";
 import "./Productsmain.css";
-import advertisement from "../img/coad.jpg";
+import advertisement from "../img/ad_4.jpg";
 import Productsmainbest from "./Productsmainbest";
 function Productsmain() {
   const bests = [

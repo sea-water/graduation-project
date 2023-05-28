@@ -112,7 +112,6 @@ const Todos = () => {
             value={value}
             onChange={onChange}
             locale="en-US"
-            showNeighboringMonth={false}
             nextLabel={<HiChevronRight />}
             prevLabel={<HiChevronLeft />}
             next2Label={null}
