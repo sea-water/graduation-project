@@ -91,11 +91,6 @@
   color: blue;
 }
 
-.currentMonthTile {
-  padding: 5px;
-  padding-bottom: 1rem;
-}
-
 /* navigation 부분 */
 .react-calendar__navigation button {
   min-width: 100px;
@@ -103,8 +98,10 @@
   margin-bottom: 2rem;
 }
 
+.currentMonthTile,
 button.sundayTile,
 button.saturdayTile {
+  padding: 5px;
   padding-bottom: 1rem;
 }
 
@@ -141,7 +138,6 @@ abbr[title] {
 
 /* 각 날짜 부분 */
 .react-calendar__tile {
-  /* test용 색 */
   border: 0.5px solid #cccccc;
   text-align: center;
 }
@@ -154,9 +150,14 @@ abbr[title] {
   background-color: rgb(203, 170, 254);
 }
 
-.react-calendar__month-view__days__day--neighboringMonth
-  .react-calendar__month-view__weekdays {
+.react-calendar__month-view__weekdays {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 13px;
+}
+
+/* 다른 달로 넘어갔을 때 day들 */
+.react-calendar__month-view__days__day {
+  padding: 5px;
+  padding-bottom: 1rem;
 }

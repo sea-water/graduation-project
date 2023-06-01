@@ -9,6 +9,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import ad_left from "../img/ad_left.jpeg";
 import ad_right from "../img/ad_right.jpeg";
 import ad_4 from "../img/ad_4.jpg";
+import { FiSearch } from "react-icons/fi";
 
 function Cmain() {
   const names = [
@@ -32,6 +33,14 @@ function Cmain() {
         <img className="ad_left" src={ad_left} alt="ad_left" />
         <div className="community_contents">
           <img className="ad_4" src={ad_4} alt="ad_4" />
+          {/* 예비 검색창 */}
+          {/* <span className="searchForm">
+            <input className="inputForm" placeholder="무엇이 궁금하세요?" />
+            <button className="searchBtn">
+              <FiSearch />
+            </button>
+          </span> */}
+          {/* 예비 검색창 끝 */}
           <button className="btn_write">글쓰기</button>
           <hr />
           <div className="crud_main">

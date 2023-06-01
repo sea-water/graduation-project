@@ -4,7 +4,6 @@ import TodoList from "./TodoList";
 import "./Todos.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../img/main_logo.jpg";
-// import "react-calendar/dist/Calendar.css";
 import Calendar from "react-calendar";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
@@ -121,6 +120,9 @@ const Todos = () => {
               <div className={`currentMonthTile ${tileClassName({ date })}`} />
             )}
           />
+          {/* 
+          <button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend saturdayTile" type="button" style="flex: 0 0 14.2857%; overflow: hidden;"><abbr aria-label="June 17, 2023">17</abbr><div class="currentMonthTile saturdayTile"></div></button>
+           */}
         </div>
       </div>
     </div>
