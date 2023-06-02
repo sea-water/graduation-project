@@ -10,7 +10,6 @@ import "./Header.css";
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const handleLogin = () => {
     // 로그인 처리 로직을 구현합니다.
     // 성공적으로 로그인되었다면 setIsLoggedIn(true)로 상태를 변경합니다.
@@ -31,7 +30,7 @@ const Header = () => {
   const buttonData = [
     { label: "PRODUCTS", path: "/Products" },
     { label: "COMMUNITY", path: "/Community" },
-    { label: "TODO LIST", path: "/Todos" },
+    { label: "PERSONAL", path: "/Personal" },
   ];
 
   const [leftLogoVisible, setLeftLogoVisible] = useState(false);

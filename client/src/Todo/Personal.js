@@ -1,17 +1,18 @@
 import React, { useRef, useState } from "react";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
-import "./Todos.css";
+import "./Personal.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../img/main_logo.jpg";
 import Calendar from "react-calendar";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import Chart from "./Chart.tsx";
 
-const Todos = () => {
+const Personal = () => {
   const buttonData = [
     { label: "PRODUCTS", path: "/Products" },
     { label: "COMMUNITY", path: "/Community" },
-    { label: "TODO LIST", path: "/Todos" },
+    { label: "PERSONAL", path: "/Personal" },
   ];
 
   const tileClassName = ({ date }) => {
@@ -96,9 +97,9 @@ const Todos = () => {
       {/* 이하 코드는 배너 밑부분 */}
       <div className="todo_container">
         <div className="todo_leftSide">
-          <span className="tab">월간 운동 횟수</span>
-          <span className="tab">체지방률 변화</span>
-          <span className="tab">월간 상태</span>
+          <span>
+            <Chart />
+          </span>
           <div className="Todos">
             <h1>TODO LIST</h1>
             <TodoInput onAdd={onAdd} />
@@ -120,13 +121,10 @@ const Todos = () => {
               <div className={`currentMonthTile ${tileClassName({ date })}`} />
             )}
           />
-          {/* 
-          <button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend saturdayTile" type="button" style="flex: 0 0 14.2857%; overflow: hidden;"><abbr aria-label="June 17, 2023">17</abbr><div class="currentMonthTile saturdayTile"></div></button>
-           */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Todos;
+export default Personal;

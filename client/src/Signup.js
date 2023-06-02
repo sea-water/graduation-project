@@ -26,7 +26,7 @@ export default function Signup() {
   const buttonData = [
     { label: "PRODUCTS", path: "/Products" },
     { label: "COMMUNITY", path: "/Community" },
-    { label: "TODO LIST", path: "/Todos" },
+    { label: "PERSONAL", path: "/Personal" },
   ];
   return (
     <div>

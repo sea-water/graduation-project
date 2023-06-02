@@ -6,7 +6,7 @@ import Products from "./Products/Products";
 import Community from "./Community/Community";
 import Signup from "./Signup";
 import Cart from "./Cart";
-import Todos from "./Todo/Todos";
+import Personal from "./Todo/Personal";
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Signup" element={<Signup />} />
-          <Route path="/Todos" element={<Todos />} />
+          <Route path="/Personal" element={<Personal />} />
         </Routes>
       </Router>
     </div>
