@@ -1,20 +1,13 @@
 import React, { useRef, useState } from "react";
+import "./Personal.css";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
-import "./Personal.css";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../img/main_logo.jpg";
+import Chart from "./Chart.tsx";
+import Header from "../Header";
 import Calendar from "react-calendar";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import Chart from "./Chart.tsx";
 
 const Personal = () => {
-  const buttonData = [
-    { label: "PRODUCTS", path: "/Products" },
-    { label: "COMMUNITY", path: "/Community" },
-    { label: "PERSONAL", path: "/Personal" },
-  ];
-
   const tileClassName = ({ date }) => {
     if (date.getDay() === 0) {
       return "sundayTile";
@@ -30,7 +23,6 @@ const Personal = () => {
 
   const [todos, setTodos] = useState([]);
   const [value, onChange] = useState(new Date());
-  const navigate = useNavigate();
 
   const onAdd = (text) => {
     setTodos([
@@ -60,43 +52,11 @@ const Personal = () => {
     );
   };
 
-  const navigateTo = (path) => {
-    navigate(path);
-  };
-
   return (
     <div>
-      <span className="banner">
-        <Link to="/">
-          <div>
-            <img className="bannerLogo" src={logo} alt="logo" />
-          </div>
-        </Link>
-        <div className="banner_btnItems">
-          <div className="left-buttons">
-            {buttonData.map((button) => (
-              <button
-                className="bannerBtn"
-                key={button.path}
-                onClick={() => navigateTo(button.path)}
-              >
-                {button.label}
-              </button>
-            ))}
-          </div>
-          <div className="right-buttons">
-            <button className="bannerBtn" onClick={() => navigateTo("/SignUp")}>
-              SIGN UP
-            </button>
-            <button className="bannerBtn" onClick={() => navigateTo("/LogIn")}>
-              LOG IN
-            </button>
-          </div>
-        </div>
-      </span>
-      {/* 이하 코드는 배너 밑부분 */}
-      <div className="todo_container">
-        <div className="todo_leftSide">
+      <Header />
+      <div className="personal_container">
+        <div className="personal_leftSide">
           <span>
             <Chart />
           </span>
@@ -106,7 +66,7 @@ const Personal = () => {
             <TodoList todos={todos} onDel={onDel} onToggle={onToggle} />
           </div>
         </div>
-        <div className="todo_rightSide">
+        <div className="personal_rightSide">
           <Calendar
             className="calendar-parent"
             value={value}

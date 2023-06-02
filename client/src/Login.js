@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "./img/main_logo.jpg";
+import Header from "./Header";
 
 export default function Login() {
-  const navigate = useNavigate();
-  const navigateTo = (path) => {
-    navigate(path);
-  };
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
@@ -21,53 +16,10 @@ export default function Login() {
     // 로그아웃되었다면 setIsLoggedIn(false)로 상태를 변경합니다.
     setIsLoggedIn(false);
   };
-  const buttonData = [
-    { label: "PRODUCTS", path: "/Products" },
-    { label: "COMMUNITY", path: "/Community" },
-    { label: "PERSONAL", path: "/Personal" },
-  ];
+
   return (
     <div>
-      <span className="banner">
-        <Link to="/">
-          <div>
-            <img className="bannerLogo" src={logo} alt="logo" />
-          </div>
-        </Link>
-        <div className="banner_btnItems">
-          <div className="left-buttons">
-            {buttonData.map((button) => (
-              <button
-                className="bannerBtn"
-                key={button.path}
-                onClick={() => navigateTo(button.path)}
-              >
-                {button.label}
-              </button>
-            ))}
-          </div>
-          <div className="right-buttons">
-            {isLoggedIn ? (
-              <button>LOG OUT</button>
-            ) : (
-              <React.Fragment>
-                <button
-                  className="bannerBtn"
-                  onClick={() => navigateTo("/SignUp")}
-                >
-                  SIGN UP
-                </button>
-                <button
-                  className="bannerBtn"
-                  onClick={() => navigateTo("/LogIn")}
-                >
-                  LOG IN
-                </button>
-              </React.Fragment>
-            )}
-          </div>
-        </div>
-      </span>
+      <Header />
       <div className="center">
         <h1>Login</h1>
         <form method="post">

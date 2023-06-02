@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "./img/main_logo.jpg";
+import Header from "./Header";
 
 export default function Signup() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,58 +17,9 @@ export default function Signup() {
     setIsLoggedIn(false);
   };
 
-  const navigate = useNavigate();
-  const navigateTo = (path) => {
-    navigate(path);
-  };
-
-  const buttonData = [
-    { label: "PRODUCTS", path: "/Products" },
-    { label: "COMMUNITY", path: "/Community" },
-    { label: "PERSONAL", path: "/Personal" },
-  ];
   return (
     <div>
-      <span className="banner">
-        <Link to="/">
-          <div>
-            <img className="bannerLogo" src={logo} alt="logo" />
-          </div>
-        </Link>
-        <div className="banner_btnItems">
-          <div className="left-buttons">
-            {buttonData.map((button) => (
-              <button
-                className="bannerBtn"
-                key={button.path}
-                onClick={() => navigateTo(button.path)}
-              >
-                {button.label}
-              </button>
-            ))}
-          </div>
-          <div className="right-buttons">
-            {isLoggedIn ? (
-              <button>LOG OUT</button>
-            ) : (
-              <React.Fragment>
-                <button
-                  className="bannerBtn"
-                  onClick={() => navigateTo("/SignUp")}
-                >
-                  SIGN UP
-                </button>
-                <button
-                  className="bannerBtn"
-                  onClick={() => navigateTo("/LogIn")}
-                >
-                  LOG IN
-                </button>
-              </React.Fragment>
-            )}
-          </div>
-        </div>
-      </span>
+      <Header />
       <div className="center">
         <h1>Sign up</h1>
         <form method="post">
