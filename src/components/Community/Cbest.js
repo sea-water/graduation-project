@@ -28,8 +28,8 @@ function Cbest(props) {
               body: JSON.stringify({
                 title:titleRef.current.value,
                 body:bodyRef.current.value,
-                writer:writerRef.current.value,
-                logo:logoRef.current.value
+                writer:writerRef.current.value
+              
               }),
         
             }).then(res=>{
@@ -43,7 +43,7 @@ function Cbest(props) {
           const titleRef=useRef(null);
           const bodyRef=useRef(null);
           const writerRef=useRef(null);
-          const logoRef=useRef(null);
+         
     return (
         <div className="Cbest">
             <div className="cbest_main">
@@ -73,13 +73,7 @@ function Cbest(props) {
                     </div>
                     
                     <div className="cbest_button">
-                    <select ref={logoRef}>
-          {days.map(day => (
-            <option key={day.id} value={day.logo}>
-              {day.logo}
-            </option>
-          ))}
-        </select>
+        
                    <button>등록하기</button>
                     <button><Link to="strap"style={{ textDecoration: "none" ,color:"#ffff"}}>목록으로</Link></button>
 

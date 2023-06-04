@@ -5,14 +5,14 @@
       "title": "체중감량",
       "body": "신세경의 다이어트 비법",
       "writer": "이현우",
-      "logo": "ltw"
+      "logo": "./img/loone.png"
     },
     {
       "id": 2,
       "title": "근력강화",
       "body": "헬린이들 이거보면서 운동하세요",
       "writer": "김해인",
-      "logo": "lothree"
+      "logo": "lotwo"
     },
     {
       "id": 3,
@@ -36,18 +36,10 @@
       "logo": "lotwo"
     },
     {
-      "title": "ㅁㄴㅇㄴㅁ",
-      "body": "ㅁㄴㅇㅁㄴㅇ",
-      "writer": "ㅁㄴㅇㄴㅁㅇ",
-      "logo": "loone",
+      "title": "sdfsasaf",
+      "body": "sdfsdfsd",
+      "writer": "sdfsdfds",
       "id": 6
-    },
-    {
-      "title": "제목",
-      "body": "내용",
-      "writer": "이현우",
-      "logo": "lotwo",
-      "id": 7
     }
   ],
   "entires": [
@@ -72,7 +64,7 @@
       "price": "48411"
     }
   ],
-  "products":[
+  "products": [
     {
       "img": "https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg",
       "name": "셔츠",
@@ -97,6 +89,53 @@
       "img": "https://andar.co.kr/web/product/medium/202303/967ca25b8acab37801febdb4a2896e4a.jpg",
       "name": "반팔",
       "price": "48411"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg",
+      "name": "셔츠",
+      "price": "48411"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg",
+      "name": "셔츠",
+      "price": "48411"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg",
+      "name": "셔츠",
+      "price": "48411"
+    }
+  ],
+  "massage": [
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/bbfe47bb11413fcc1f24283eaf759442.jpg",
+      "name": "손목보호대",
+      "price": "123154"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/medium/202010/cffb58d95d0a3361257758c977b2bbd9.jpg",
+      "name": "마사지",
+      "price": "123154"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/3549915671c81d71e228982dc0e11b5a.jpg",
+      "name": "마사지",
+      "price": "123154"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/small/202303/72a0fbd95c55b96d2bb1b9d653fe6192.jpg",
+      "name": "마사지",
+      "price": "123154"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/medium/202205/df3cad6a6a569883caf64053e40ad5a3.jpg",
+      "name": "마사지",
+      "price": "123154"
+    },
+    {
+      "img": "https://andar.co.kr/web/product/medium/202106/040e4f46d500cdc1703517abb2b0aa0a.jpg",
+      "name": "마사지",
+      "price": "123154"
     }
   ]
 }
