@@ -16,7 +16,7 @@ export default function App() {
   return (
     <Router>
         <Routes>
-        <Route path="/Details" element={<Details/>}/>
+        <Route path="/products/manentire/:id" element={<Details/>}/>
           <Route exact path="/" element={<Header />} />
           <Route path="/Products/*" element={<Products/>}/>
           <Route path="/Community/*" element={<Community />} />

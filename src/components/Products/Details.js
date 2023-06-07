@@ -1,10 +1,22 @@
-import React from 'react';
+import {React,useEffect,useState} from 'react';
 import './Details.css';
 import logo from '../img/mainlogo.jpg';
 import {FiSearch} from "react-icons/fi";
-import {Link} from 'react-router-dom';
+import {Link,useParams} from 'react-router-dom';
 import { AiFillShopping} from "react-icons/ai";
+import axios from "axios";
 function Details(props) {
+  const {id}=useParams();
+const [entires,setEntires]=useState(null);
+useEffect(()=>{
+  axios.get(`http://localhost:4000/products/${id}`)
+  .then((response)=>{
+   setEntires(response.data);
+    })
+},[id]);
+if (!entires) {
+  return <div>Loading...</div>;
+}
     return (
         <div className="Details">
             <div className="Sheader1">
@@ -32,11 +44,12 @@ function Details(props) {
           <div className="detail_body">
             <div className="detail_body_center">
                 <div className="center_right">
-                
+                <img className="center_right_img"  src={entires.img}alt="img"/>
                 </div>
                 <div className="center_left">
-                  <div className="center_left_mininame">임욱 상사</div>
-                  <h2>미르 노트 파우치</h2>
+                
+        <div className="center_left_mininame">임욱 상사</div>
+        <h2>{entires.name}</h2>          
                   <div className="center_left_t">택배 배송/ 무료 배송</div>
                   <hr></hr>
                   <div className="center_left_num">
@@ -49,7 +62,7 @@ function Details(props) {
                     <div>총 상품 금액</div>
                     <div className="center_left_last">
                     <div className="last_left">총 수량 1개</div>
-                    <h4>1000원</h4>
+                    <h4>{entires.price}원</h4>
                     </div>
                   </div>
                   <div className="center_left_button">

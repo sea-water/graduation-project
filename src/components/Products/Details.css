@@ -21,6 +21,15 @@
    
 
 }
+.center_right_img{
+    box-sizing: border-box;
+    border-radius: 35px;
+    height:100%;
+    width:100%;
+    margin-right:6%;
+    box-shadow:  0px 11px 30px 8px rgba(0, 0, 0, 0.25);
+    background-color: gray;
+}
 .center_right{
    box-sizing: border-box;
     border-radius: 35px;

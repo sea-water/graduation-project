@@ -5,6 +5,7 @@ import {Link,Route,Routes} from 'react-router-dom';
 import {FiSearch} from "react-icons/fi";
 import Cmain from "./Cmain";
 import Cbest from "./Cbest";
+import Content from "./Content";
 
 export default function Community() {
 
@@ -28,6 +29,7 @@ export default function Community() {
 
 
 <Routes>
+  <Route path="/:id" element={<Content/>}/>
           <Route path="/*" element={<Cmain/>} />
           <Route path="Cbest" element={<Cbest/>} />
         </Routes>
