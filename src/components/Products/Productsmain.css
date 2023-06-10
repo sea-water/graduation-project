@@ -26,7 +26,7 @@
 .main_best{
   border-bottom:2px solid black;
   border-top:2px solid black;
-  width:1400px;
+  width:1300px;
   height:450px;
   box-sizing: border-box;  
 }
@@ -54,7 +54,7 @@
 .main_new{
   border-bottom:2px solid black;
   border-top:2px solid black;
-  width:1400px;
+  width:1300px;
   height:450px;
 box-sizing: border-box;  
 }

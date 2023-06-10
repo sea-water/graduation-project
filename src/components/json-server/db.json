@@ -34,40 +34,10 @@
       "body": "신세경의 다이어트 비법",
       "writer": "이현우",
       "logo": "lotwo"
-    },
-    {
-      "title": "나는너의",
-      "body": "영원한친구야",
-      "writer": "굳굳",
-      "id": 6
     }
+  
   ],
-  "entires": [
-    {
-      "id": 1,
-      "img": "https://andar.co.kr/web/product/small/202303/2aa981c3bf720faf7325092089320102.jpg",
-      "name": "셔츠",
-      "price": "48411"
-    },
-    {
-      "id": 2,
-      "img": "https://andar.co.kr/web/product/medium/202303/c9244b8bde16f8a1c69a76c2a6e369b7.jpg",
-      "name": "롱슬리브",
-      "price": "48411"
-    },
-    {
-      "id": 3,
-      "img": "https://andar.co.kr/web/product/small/202303/b29a922033c76acf987dc00affb15314.jpg",
-      "name": "카라반팔",
-      "price": "48411"
-    },
-    {
-      "id": 4,
-      "img": "https://andar.co.kr/web/product/medium/202303/967ca25b8acab37801febdb4a2896e4a.jpg",
-      "name": "반팔",
-      "price": "48411"
-    }
-  ],
+ 
   "products": [
     {
       "id": 1,
@@ -156,6 +126,7 @@
       "price": "800"
     }
   ],
+  
   "content": [
     {
       "id": 1,
@@ -164,6 +135,60 @@
     {
       "body": "와 꿀팁이네요",
       "id": 2
+    },
+    {
+      "body": "asdasd",
+      "id": 3
     }
+  ],
+  "gym":[
+    {"id":1,
+    "name":"자마이카휘트니스",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCF6BMKvoYSV2Rh3cDcgLxa1GTNsg7L_Heg&usqp=CAU",
+    "local":"서울",
+    "price":55000
+  },
+  {"id":2,
+    "name":"히트 라이프 짐",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-gbMjG6bfyBpQK2nUOcsdfCSIOq01yuighQ&usqp=CAU",
+    "local":"대구",
+    "price":33000
+  },
+  {"id":3,
+    "name":"라이프 줄리엣 짐",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTYGRcfwij-a0milpXghT-cgp8PhwWpS2wfA&usqp=CAU",
+    "local":"경북",
+    "price":20000
+  },
+  {"id":4,
+    "name":"휘트니스 헬로우짐",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJSm3prpzzN2F4HQx16voHLG36i8FdQPETQ&usqp=CAU",
+    "local":"인천",
+    "price":35000
+  },
+  {"id":5,
+    "name":"테리온 휘트니스",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_oSg2UwjeX7BfpxsAXvt2xGQdbuXK6jgzbw&usqp=CAU",
+    "local":"서울",
+    "price":45000
+  },
+  {"id":6,
+    "name":"아프로 휘트니스",
+    "img":"https://watermark.lovepik.com/photo/20211126/large/lovepik-gym-picture_501088658.jpg",
+    "local":"서울",
+    "price":50000
+  },
+  {"id":7,
+    "name":"인디언 마이 짐",
+    "img":"https://img.seoul.co.kr//img/upload/2021/01/04/SSI_20210104143340.jpg",
+    "local":"부산",
+    "price":37000
+  },
+  {"id":8,
+    "name":"JR 휘트니스",
+    "img":"https://watermark.lovepik.com/photo/20211126/large/lovepik-gym-picture_501088659.jpg",
+    "local":"김포",
+    "price":20000
+  }
   ]
 }

@@ -1,6 +1,7 @@
 .Products{
   
   overflow-y:scroll;
+ 
   height:760px;
   background-image: url("../img/showingpage.png");
 }

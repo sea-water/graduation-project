@@ -12,10 +12,12 @@ import TodoList from "./components/Mypage/Todos";
 import Cart from "./components/Cart";
 import Home from "./components/MyHome/Home";
 import Details from './components/Products/Details';
+import Details2 from "./components/Products/Details2";
 export default function App() {
   return (
     <Router>
         <Routes>
+        <Route path="/products/main/:id" element={<Details2/>}/>
         <Route path="/products/manentire/:id" element={<Details/>}/>
           <Route exact path="/" element={<Header />} />
           <Route path="/Products/*" element={<Products/>}/>
