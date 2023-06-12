@@ -19,7 +19,7 @@ export default function Header() {
   ];
 
   return (
-    <div>
+    <div className="top-banner">
       <span className="banner">
         <Link to="/">
           <div>
@@ -39,12 +39,12 @@ export default function Header() {
             ))}
           </div>
           <div className="right-buttons">
-            <span className="searchForm">
+            <div className="searchForm">
               <input className="inputForm" placeholder="무엇이 궁금하세요?" />
               <button className="searchBtn">
                 <FiSearch />
               </button>
-            </span>
+            </div>
             {isLoggedIn ? (
               <button>LOG OUT</button>
             ) : (

@@ -4,7 +4,7 @@
 }
 
 .ad_4 {
-  width: 1000px;
+  width: 100%;
   height: 283px;
 }
 
@@ -18,9 +18,7 @@
 .btn_write {
   color: #b98eff;
   font-weight: bolder;
-  margin: 30px 0px;
   padding: 10px 0px;
-  float: right;
   width: 80px;
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -32,11 +30,17 @@
   border: none;
 }
 
-hr {
+.search_post_input {
   border: none;
-  width: 100%;
-  height: 1px;
-  border: 1px solid #6a6a6a;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+
+.search_container {
+  display: flex; /* 플렉스 디스플레이 설정 */
+  justify-content: space-between; /* 아이템들을 가로 방향으로 가운데 정렬 */
+  align-items: center; /* 아이템들을 세로 방향으로 가운데 정렬 */
+  margin: 2rem;
 }
 
 .crud_map {
@@ -48,7 +52,7 @@ hr {
   flex-shrink: 0;
 }
 
-/* 하위 내용은 페이지 이동에 관한 css code */
+/* 페이지 이동 버튼 */
 .pagination-box {
   display: flex;
   justify-content: center;
@@ -58,4 +62,48 @@ hr {
   text-decoration: none;
   color: #b98eff;
   padding: 20px;
+}
+
+/*  dropdown 메뉴 */
+ul {
+  list-style: none;
+}
+
+li {
+  position: relative;
+}
+
+.option_title {
+  text-decoration: none;
+  color: #8a8a8a;
+  font-weight: bolder;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.option_parent:hover {
+  background-color: #ccd7ff;
+  border-radius: 0;
+}
+
+li:hover .options_container {
+  display: block;
+}
+
+.options_container {
+  display: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+  text-decoration: none;
+  color: #8a8a8a;
+  box-shadow: 5px 5px 20px lightgray;
+}
+
+.options_container a {
+  text-decoration: none;
+  color: #8a8a8a;
+  padding: 10px;
 }

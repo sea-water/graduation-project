@@ -1,5 +1,4 @@
 import React from "react";
-import "./Community.css";
 import { Route, Routes } from "react-router-dom";
 import Cmain from "./Cmain";
 import Cbest from "./Cbest";
