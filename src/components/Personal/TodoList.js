@@ -1,5 +1,5 @@
 import React from "react";
-import TodoItem from "../Todo/TodoItem";
+import TodoItem from "./TodoItem";
 import "./TodoList.css";
 
 const TodoList = ({ todos, onDel, onToggle }) => {

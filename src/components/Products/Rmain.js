@@ -24,7 +24,7 @@ function Rmain(props) {
         <div className="rap_main_price"> {gym.local} {gym.price}원</div>
         </div>
         <div className="rap_main_button">
-        <button className="r_main_button" onClick={()=>{window.open("https://jamaicaseoul.modoo.at/")}}>링크 바로가기</button>
+        <button className="r_main_button" style={{ textDecoration: "none" ,color:"white"}} onClick={()=>{window.open("https://jamaicaseoul.modoo.at/")}}>링크 바로가기</button>
         </div>
         </div>
         ))} 
